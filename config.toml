@@ -1,7 +1,16 @@
-languageCode = "en-us"
+languageCode = "en-gb"
 title = "Aoife's Blog"
 theme = "hermit"
 enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
+
+baseurl = "/"
+[author]
+    name = "Aoife Hughes"
+
+[blackfriday]
+  # hrefTargetBlank = true
+  # noreferrerLinks = true
+  # nofollowLinks = true
 
 
 [menu]
