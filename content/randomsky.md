@@ -29,6 +29,12 @@ images:
             display: table;
             clear: both;
         }
+
+        select.option
+        {
+            
+            color: black;
+        }
     </style>
 
     <script>
@@ -50,7 +56,7 @@ images:
 
         function makeDropD(arr, eleI, skip) {
             var select = document.getElementById(eleI);
-            var options = mqs;
+            var options = arr;
             for (var i = 1; i < options.length; i++) {
                 // if (i == skip) {
                 //     continue;

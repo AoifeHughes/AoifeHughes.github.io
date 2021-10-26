@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta itemprop="name" content="Skyrim Randomiser">
-<meta itemprop="description" content="* { box-sizing: border-box; } /* Create three equal columns that floats next to each other */ .column { float: left; width: 50%; padding: 10px; height: 300px; /* Should be removed. Only for demonstration */ } /* Clear floats after the columns */ .row:after { content: &#34;&#34;; display: table; clear: both; }   const mqs = [&#34;College of Winterhold&#34;, &#34;Companions&#34;, &#34;Dark Brotherhood&#34;, &#34;Imperial Legion OR Stormcloaks&#34;, &#34;Thieves Guild&#34;"><meta itemprop="datePublished" content="2021-10-26T13:07:22+01:00" />
+<meta itemprop="description" content="* { box-sizing: border-box; } /* Create three equal columns that floats next to each other */ .column { float: left; width: 50%; padding: 10px; height: 300px; /* Should be removed. Only for demonstration */ } /* Clear floats after the columns */ .row:after { content: &#34;&#34;; display: table; clear: both; } select.option { color: black; }   const mqs = [&#34;College of Winterhold&#34;, &#34;Companions&#34;, &#34;Dark Brotherhood&#34;, &#34;"><meta itemprop="datePublished" content="2021-10-26T13:07:22+01:00" />
 <meta itemprop="dateModified" content="2021-10-26T13:07:22+01:00" />
-<meta itemprop="wordCount" content="319">
+<meta itemprop="wordCount" content="324">
 <meta itemprop="keywords" content="" /><meta property="og:title" content="Skyrim Randomiser" />
-<meta property="og:description" content="* { box-sizing: border-box; } /* Create three equal columns that floats next to each other */ .column { float: left; width: 50%; padding: 10px; height: 300px; /* Should be removed. Only for demonstration */ } /* Clear floats after the columns */ .row:after { content: &#34;&#34;; display: table; clear: both; }   const mqs = [&#34;College of Winterhold&#34;, &#34;Companions&#34;, &#34;Dark Brotherhood&#34;, &#34;Imperial Legion OR Stormcloaks&#34;, &#34;Thieves Guild&#34;" />
+<meta property="og:description" content="* { box-sizing: border-box; } /* Create three equal columns that floats next to each other */ .column { float: left; width: 50%; padding: 10px; height: 300px; /* Should be removed. Only for demonstration */ } /* Clear floats after the columns */ .row:after { content: &#34;&#34;; display: table; clear: both; } select.option { color: black; }   const mqs = [&#34;College of Winterhold&#34;, &#34;Companions&#34;, &#34;Dark Brotherhood&#34;, &#34;" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/randomsky/" /><meta property="article:section" content="" />
 <meta property="article:published_time" content="2021-10-26T13:07:22+01:00" />
@@ -18,7 +18,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Skyrim Randomiser"/>
-<meta name="twitter:description" content="* { box-sizing: border-box; } /* Create three equal columns that floats next to each other */ .column { float: left; width: 50%; padding: 10px; height: 300px; /* Should be removed. Only for demonstration */ } /* Clear floats after the columns */ .row:after { content: &#34;&#34;; display: table; clear: both; }   const mqs = [&#34;College of Winterhold&#34;, &#34;Companions&#34;, &#34;Dark Brotherhood&#34;, &#34;Imperial Legion OR Stormcloaks&#34;, &#34;Thieves Guild&#34;"/>
+<meta name="twitter:description" content="* { box-sizing: border-box; } /* Create three equal columns that floats next to each other */ .column { float: left; width: 50%; padding: 10px; height: 300px; /* Should be removed. Only for demonstration */ } /* Clear floats after the columns */ .row:after { content: &#34;&#34;; display: table; clear: both; } select.option { color: black; }   const mqs = [&#34;College of Winterhold&#34;, &#34;Companions&#34;, &#34;Dark Brotherhood&#34;, &#34;"/>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -87,6 +87,12 @@
             display: table;
             clear: both;
         }
+
+        select.option
+        {
+            
+            color: black;
+        }
     </style>
 
     <script>
@@ -108,7 +114,7 @@
 
         function makeDropD(arr, eleI, skip) {
             var select = document.getElementById(eleI);
-            var options = mqs;
+            var options = arr;
             for (var i = 1; i < options.length; i++) {
                 // if (i == skip) {
                 //     continue;
