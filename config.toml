@@ -1,0 +1,48 @@
+languageCode = "en-us"
+title = "Aoife's Blog"
+theme = "hermit"
+enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
+
+
+[menu]
+
+  [[menu.main]]
+    name = "Posts"
+    url = "posts/"
+    weight = 10
+
+  [[menu.main]]
+    name = "Skyrim Randomiser"
+    url = "randomsky/"
+    weight = 20
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+
+    homeSubtitle = "A place for things I find interesting, from Science to Programming and a lot of Gaming"
+
+
+    [[params.social]]
+    name = "twitch"
+    url = "https://www.twitch.tv/aoifehughes__"
+
+    [[params.social]]
+    name = "youtube"
+    url = "https://www.youtube.com/channel/UCoj4IBtY8F9zcbApICOCuqw"
+
+
+    [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/AoifeH__"
+
+    [[params.social]]
+    name = "instagram"
+    url = "https://instagram.com/Aoife.1.Hughes"
+
+    [[params.social]]
+    name = "github"
+    url = "https://github.com/AoifeHughes"
