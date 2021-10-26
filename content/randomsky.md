@@ -49,7 +49,7 @@ images:
 
         const challenges = ["Cannot comprehend money, this character cannot hold more than 100 Gold",
             "Elf-phobia, cannot use any Elven Weapons or Armour", "Afraid of Horses, cannot use carriages or ride horses",
-            "Blunt Obsessed, cannot use sharp weapons (swords)", "Hates the cold (cannot wait outdoors)", "Hobbit feet (cannot wear shoes/boots)", "Sensitive stomach (cannot eat uncooked food", "Hates the Empire (must avoid when possible and join Stormcloaks)", "Sticky fingers (if you see something you want, you need to have it)"
+            "Blunt Obsessed, cannot use sharp weapons (swords)", "Hates the cold (cannot wait outdoors)", "Hobbit feet (cannot wear shoes/boots)", "Sensitive stomach (cannot eat uncooked food)", "Hates the Empire (must avoid when possible and join Stormcloaks)", "Sticky fingers (if you see something you want, you need to have it)"
         ];
 
 
