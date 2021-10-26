@@ -5,6 +5,26 @@
     <link>/</link>
     <description>Recent content on Aoife&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 26 Oct 2021 13:28:26 +0100</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World</title>
+      <link>/posts/hello-world/</link>
+      <pubDate>Tue, 26 Oct 2021 13:28:26 +0100</pubDate>
+      
+      <guid>/posts/hello-world/</guid>
+      <description>Hi, Thanks for coming to my new blog.
+I hope to soon populate it with lots of fun things.</description>
+    </item>
+    
+    <item>
+      <title>Skyrim Randomiser</title>
+      <link>/randomsky/</link>
+      <pubDate>Tue, 26 Oct 2021 13:07:22 +0100</pubDate>
+      
+      <guid>/randomsky/</guid>
+      <description>* { box-sizing: border-box; } /* Create three equal columns that floats next to each other */ .column { float: left; width: 50%; padding: 10px; height: 300px; /* Should be removed. Only for demonstration */ } /* Clear floats after the columns */ .row:after { content: &#34;&#34;; display: table; clear: both; }   const mqs = [&#34;College of Winterhold&#34;, &#34;Companions&#34;, &#34;Dark Brotherhood&#34;, &#34;Imperial Legion OR Stormcloaks&#34;, &#34;Thieves Guild&#34;</description>
+    </item>
+    
   </channel>
 </rss>
