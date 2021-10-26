@@ -1,0 +1,4 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Aoife's Blog</title><link>/posts/</link><description>Recent content in Posts on Aoife's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-gb</language><lastBuildDate>Tue, 26 Oct 2021 13:28:26 +0100</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello World</title><link>/posts/hello-world/</link><pubDate>Tue, 26 Oct 2021 13:28:26 +0100</pubDate><guid>/posts/hello-world/</guid><description>Hi, Thanks for coming to my new blog.
+I hope to soon populate it with lots of fun things.</description><content type="html">&lt;p>Hi,
+Thanks for coming to my new blog.&lt;/p>
+&lt;p>I hope to soon populate it with lots of fun things.&lt;/p></content></item></channel></rss>
