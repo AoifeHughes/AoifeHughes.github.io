@@ -6,7 +6,18 @@
     <description>Recent content on Aoife&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 26 Oct 2021 13:28:26 +0100</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Oct 2021 13:45:50 +0100</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Narrow Escape Visualization</title>
+      <link>/posts/narrow-escape/</link>
+      <pubDate>Thu, 28 Oct 2021 13:45:50 +0100</pubDate>
+      
+      <guid>/posts/narrow-escape/</guid>
+      <description>The Narrow Escape Problem is a bio physics problem which attempts to estimate how long it takes for a particle moving under Brownian motion to escape from a container with solid walls, where part of the wall is open.
+Recently we published a software library for building narrow escape simulations. We also used this to discuss its use in determining the escape time for small molecules from plant cells.
+I&amp;rsquo;ve recently been working with plotly to create interactive plots.</description>
+    </item>
+    
     <item>
       <title>Hello World</title>
       <link>/posts/hello-world/</link>

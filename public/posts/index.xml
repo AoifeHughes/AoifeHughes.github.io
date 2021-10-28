@@ -5,8 +5,30 @@
 		<description>Recent content in Posts on Aoife&#39;s Blog</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-gb</language>
-		<lastBuildDate>Tue, 26 Oct 2021 13:28:26 +0100</lastBuildDate>
+		<lastBuildDate>Thu, 28 Oct 2021 13:45:50 +0100</lastBuildDate>
 		<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Narrow Escape Visualization</title>
+			<link>/posts/narrow-escape/</link>
+			<pubDate>Thu, 28 Oct 2021 13:45:50 +0100</pubDate>
+			
+			<guid>/posts/narrow-escape/</guid>
+			<description>The Narrow Escape Problem is a bio physics problem which attempts to estimate how long it takes for a particle moving under Brownian motion to escape from a container with solid walls, where part of the wall is open.
+Recently we published a software library for building narrow escape simulations. We also used this to discuss its use in determining the escape time for small molecules from plant cells.
+I&amp;rsquo;ve recently been working with plotly to create interactive plots.</description>
+			<content type="html"><![CDATA[<p>The <a href="https://en.wikipedia.org/wiki/Narrow_escape_problem" title="NEP">Narrow Escape Problem</a> is a bio physics problem which attempts to estimate how long it takes for a particle moving under Brownian motion to escape from a container with solid walls, where part of the wall is open.</p>
+<p>Recently <a href="https://joss.theoj.org/papers/10.21105/joss.02072">we published a software library</a> for building narrow escape simulations. We also used this to discuss its use in determining the <a href="https://ieeexplore.ieee.org/document/9440948">escape time for small molecules from plant cells</a>.</p>
+<p>I&rsquo;ve recently been working with <a href="https://plotly.com">plotly</a> to create interactive plots. With plotly I put together a little example of our simulation software which, I think, nicely explains the concept.</p>
+<p>Below you can see our container cell in silvery-gray, a blue dot represents the part of the container which is free to escape through. By moving the slider you can see the random-walk path that the particle takes until it finally reaches the blue escape point.</p>
+<p>(I also wrote this as I wanted an excuse to test out my new blog and how it handles these plotly graphs!)</p>
+
+
+    <iframe src="/subfiles/NEP.html" style="height: 700px; width: 100%;"></iframe>
+
+
+]]></content>
+		</item>
 		
 		<item>
 			<title>Hello World</title>
