@@ -1,3 +1,6 @@
+---
+title: "Computational Modelling with Apple Silicon"
+date: 2021-11-14T15:15:29Z
 draft: False
 toc: false
 images:
