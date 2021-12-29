@@ -16,5 +16,14 @@
       <description>Ever since Apple Silicon was announced I was enthralled and curious. Even as reviews and benchmarks came pouring in after the original M1 Macbook Pro, Mini and Air released I was skeptical. Working in research we often find that tools we depend on are ancient by computer standards, even worse is that some of them are either difficult to build/update or are closed source (or worse still, written in PERL!). Which highlights my major fear of Apple&amp;rsquo;s new direction, I was initially terrified that almost all of my pipelines and tools would die in x86 and I would be forced to migrate to, ugh, Windows.</description>
     </item>
     
+    <item>
+      <title>A review of Marvel Champions the Living Card Game</title>
+      <link>/posts/marvel-champions-review/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/marvel-champions-review/</guid>
+      <description>Intro Marvel champions is the latest living card game (LCG) from fantasy flight games. If you are familiar with other entries in this series of games, such as Arkham Horror The Card Game, then not much introduction is needed. These games come with a core set that gets you started and allows/encourages you to expand your gameplay through additional expansion packs. Unlike some games on the market, these LCGs and their expansions are not randomised and you always know what you’re getting in your box/card pack.</description>
+    </item>
+    
   </channel>
 </rss>

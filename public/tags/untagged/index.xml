@@ -17,5 +17,14 @@
 I hope to soon populate it with lots of fun things.</description>
     </item>
     
+    <item>
+      <title>Hello World</title>
+      <link>/hello-world/</link>
+      <pubDate>Tue, 26 Oct 2021 13:20:36 +0100</pubDate>
+      
+      <guid>/hello-world/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
