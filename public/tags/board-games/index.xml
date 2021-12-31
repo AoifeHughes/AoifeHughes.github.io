@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Board Games on Aoife&#39;s Blog</title>
+    <link>/tags/board-games/</link>
+    <description>Recent content in Board Games on Aoife&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 29 Dec 2021 19:23:09 +0000</lastBuildDate><atom:link href="/tags/board-games/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A review of Marvel Champions the Living Card Game</title>
+      <link>/posts/marvel-champions-review/</link>
+      <pubDate>Wed, 29 Dec 2021 19:23:09 +0000</pubDate>
+      
+      <guid>/posts/marvel-champions-review/</guid>
+      <description>Intro Marvel champions is the latest living card game (LCG) from fantasy flight games. If you are familiar with other entries in this series of games, such as Arkham Horror The Card Game, then not much introduction is needed. These games come with a core set that gets you started and allows/encourages you to expand your gameplay through additional expansion packs. Unlike some games on the market, these LCGs and their expansions are not randomised and you always know what you’re getting in your box/card pack.</description>
+    </item>
+    
+  </channel>
+</rss>
