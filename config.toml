@@ -21,9 +21,20 @@ baseurl = "/"
     weight = 10
 
   [[menu.main]]
+    name = "My CV"
+    url = "https://github.com/AoifeHughes/cv/raw/master/cv.pdf"
+
+
+  [[menu.main]]
+    name = "Python Crash Course for Biologists"
+    url = "https://github.com/AoifeHughes/Python-Crash-Course"
+
+
+  [[menu.main]]
     name = "Skyrim Randomiser"
     url = "randomsky/"
     weight = 20
+
 
 [params]
   dateform        = "Jan 2, 2006"
