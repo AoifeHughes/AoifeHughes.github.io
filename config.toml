@@ -30,7 +30,7 @@ baseurl = "/"
     url = "https://github.com/AoifeHughes/Python-Crash-Course"
 
 
-  [[menu,main]]
+  [[menu.main]]
     name = "MapMate"
     url = "https://aoifehughes.github.io/mapmate.html"
 
