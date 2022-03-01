@@ -58,10 +58,9 @@ baseurl = "/"
     name = "youtube"
     url = "https://www.youtube.com/channel/UCoj4IBtY8F9zcbApICOCuqw"
 
-
     [[params.social]]
     name = "twitter"
-    url = "https://twitter.com/AoifeH__"
+    url = "https://twitter.com/AoifeHughes__"
 
     [[params.social]]
     name = "instagram"
