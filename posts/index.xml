@@ -100,81 +100,81 @@ These data are limited to what a 10 second google search yielded (I found it on 
 </ul>
 <p>With proper data, this should really be a country agnostic plot. I&rsquo;ll update this when I have time to find data&hellip;</p>
 <p>Okay, so this pretty much works like any data analysis/visualization. First we load in the data,</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> plotly.graph_objects <span style="color:#66d9ef">as</span> go
-<span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
-
-df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;temp_data.csv&#39;</span>)<span style="color:#f92672">.</span>melt(id_vars<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;year&#39;</span>], var_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;country&#39;</span>, value_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;temperature&#39;</span>)</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> plotly.graph_objects <span style="color:#66d9ef">as</span> go
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;temp_data.csv&#39;</span>)<span style="color:#f92672">.</span>melt(id_vars<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;year&#39;</span>], var_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;country&#39;</span>, value_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;temperature&#39;</span>)</span></span></code></pre></div>
 <p>, because the data are column based we just have to melt it so that each country has a year and a temperature per row.</p>
 <p>Using pycountry we can create a dictionary to match up country names in our data to their codes used in plotting per country,</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pycountry
-keys <span style="color:#f92672">=</span> [list(pycountry<span style="color:#f92672">.</span>countries)[i]<span style="color:#f92672">.</span>alpha_3 <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(pycountry<span style="color:#f92672">.</span>countries))]
-names <span style="color:#f92672">=</span> [list(pycountry<span style="color:#f92672">.</span>countries)[i]<span style="color:#f92672">.</span>name <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(pycountry<span style="color:#f92672">.</span>countries))]
-conv <span style="color:#f92672">=</span> { v:k <span style="color:#66d9ef">for</span> k,v <span style="color:#f92672">in</span> zip(keys,names) }
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">match_name</span>(x):
-    <span style="color:#66d9ef">try</span>:
-        <span style="color:#66d9ef">return</span> conv[x]
-    <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">KeyError</span> <span style="color:#66d9ef">as</span> e:
-        <span style="color:#66d9ef">for</span>  n <span style="color:#f92672">in</span> names:
-            <span style="color:#66d9ef">if</span> x <span style="color:#f92672">in</span> n:
-                <span style="color:#66d9ef">return</span> conv[n]
-        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;N/A&#39;</span>
-df[<span style="color:#e6db74">&#39;codes&#39;</span>] <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: match_name(x[<span style="color:#e6db74">&#39;country&#39;</span>]), axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pycountry
+</span></span><span style="display:flex;"><span>keys <span style="color:#f92672">=</span> [list(pycountry<span style="color:#f92672">.</span>countries)[i]<span style="color:#f92672">.</span>alpha_3 <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(pycountry<span style="color:#f92672">.</span>countries))]
+</span></span><span style="display:flex;"><span>names <span style="color:#f92672">=</span> [list(pycountry<span style="color:#f92672">.</span>countries)[i]<span style="color:#f92672">.</span>name <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(pycountry<span style="color:#f92672">.</span>countries))]
+</span></span><span style="display:flex;"><span>conv <span style="color:#f92672">=</span> { v:k <span style="color:#66d9ef">for</span> k,v <span style="color:#f92672">in</span> zip(keys,names) }
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">match_name</span>(x):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> conv[x]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">KeyError</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span>  n <span style="color:#f92672">in</span> names:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> x <span style="color:#f92672">in</span> n:
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> conv[n]
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;N/A&#39;</span>
+</span></span><span style="display:flex;"><span>df[<span style="color:#e6db74">&#39;codes&#39;</span>] <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: match_name(x[<span style="color:#e6db74">&#39;country&#39;</span>]), axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)</span></span></code></pre></div>
 <p>Finally, using plotly sliders, we can just create a Choropleth plot for each year, set it to not being visable and create a master figure out of them all.</p>
 <p>And thats that.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">years <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;year&#39;</span>]<span style="color:#f92672">.</span>unique()
-years<span style="color:#f92672">.</span>sort()
-years_sliders <span style="color:#f92672">=</span> []
-
-<span style="color:#66d9ef">for</span> year <span style="color:#f92672">in</span> years:
-    tdf <span style="color:#f92672">=</span> df[df[<span style="color:#e6db74">&#39;year&#39;</span>] <span style="color:#f92672">==</span> year]
-
-    years_sliders<span style="color:#f92672">.</span>append(go<span style="color:#f92672">.</span>Choropleth(
-        visible<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
-        locations <span style="color:#f92672">=</span> tdf[<span style="color:#e6db74">&#39;codes&#39;</span>],
-        z <span style="color:#f92672">=</span> tdf[<span style="color:#e6db74">&#39;temperature&#39;</span>],
-        text <span style="color:#f92672">=</span> tdf[<span style="color:#e6db74">&#39;country&#39;</span>],
-        colorscale <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;RdBu&#39;</span>,
-        autocolorscale<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>,
-        reversescale<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
-        marker_line_color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;darkgray&#39;</span>,
-        marker_line_width<span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span>,
-        colorbar_tickprefix <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;C&#39;</span>,
-        colorbar_title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Temperature&#39;</span>,
-        zmin<span style="color:#f92672">=-</span>df[<span style="color:#e6db74">&#39;temperature&#39;</span>]<span style="color:#f92672">.</span>min(), zmax<span style="color:#f92672">=</span>df[<span style="color:#e6db74">&#39;temperature&#39;</span>]<span style="color:#f92672">.</span>max()
-    ))
-
-fig <span style="color:#f92672">=</span> go<span style="color:#f92672">.</span>Figure(data<span style="color:#f92672">=</span>years_sliders)
-
-steps <span style="color:#f92672">=</span> []
-<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(years)):
-    step <span style="color:#f92672">=</span> dict(
-        method<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;update&#34;</span>,
-        args<span style="color:#f92672">=</span>[{<span style="color:#e6db74">&#34;visible&#34;</span>: [<span style="color:#66d9ef">False</span>] <span style="color:#f92672">*</span> len(fig<span style="color:#f92672">.</span>data)},
-              {<span style="color:#e6db74">&#34;title&#34;</span>: <span style="color:#e6db74">&#34;Year: &#34;</span> <span style="color:#f92672">+</span> str(years[i])}],
-              label<span style="color:#f92672">=</span>str(years[i])  <span style="color:#75715e"># layout attribute</span>
-    )
-    step[<span style="color:#e6db74">&#34;args&#34;</span>][<span style="color:#ae81ff">0</span>][<span style="color:#e6db74">&#34;visible&#34;</span>][i] <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>  <span style="color:#75715e"># Toggle i&#39;th trace to &#34;visible&#34;</span>
-    steps<span style="color:#f92672">.</span>append(step)
-
-sliders <span style="color:#f92672">=</span> [dict(
-    active<span style="color:#f92672">=</span>len(years),
-    currentvalue<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#34;prefix&#34;</span>: <span style="color:#e6db74">&#34;Steps: &#34;</span>},
-    pad<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#34;t&#34;</span>: <span style="color:#ae81ff">50</span>},
-    steps<span style="color:#f92672">=</span>steps,
-)]
-
-geo<span style="color:#f92672">=</span>dict(
-        showframe<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
-        showcoastlines<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
-        projection_type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;orthographic&#39;</span>
-    )
-fig<span style="color:#f92672">.</span>update_layout(
-    sliders<span style="color:#f92672">=</span>sliders,
-    geo<span style="color:#f92672">=</span>geo
-)
-fig<span style="color:#f92672">.</span>data[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>visible <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>
-
-fig<span style="color:#f92672">.</span>show()</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>years <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;year&#39;</span>]<span style="color:#f92672">.</span>unique()
+</span></span><span style="display:flex;"><span>years<span style="color:#f92672">.</span>sort()
+</span></span><span style="display:flex;"><span>years_sliders <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> year <span style="color:#f92672">in</span> years:
+</span></span><span style="display:flex;"><span>    tdf <span style="color:#f92672">=</span> df[df[<span style="color:#e6db74">&#39;year&#39;</span>] <span style="color:#f92672">==</span> year]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    years_sliders<span style="color:#f92672">.</span>append(go<span style="color:#f92672">.</span>Choropleth(
+</span></span><span style="display:flex;"><span>        visible<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
+</span></span><span style="display:flex;"><span>        locations <span style="color:#f92672">=</span> tdf[<span style="color:#e6db74">&#39;codes&#39;</span>],
+</span></span><span style="display:flex;"><span>        z <span style="color:#f92672">=</span> tdf[<span style="color:#e6db74">&#39;temperature&#39;</span>],
+</span></span><span style="display:flex;"><span>        text <span style="color:#f92672">=</span> tdf[<span style="color:#e6db74">&#39;country&#39;</span>],
+</span></span><span style="display:flex;"><span>        colorscale <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;RdBu&#39;</span>,
+</span></span><span style="display:flex;"><span>        autocolorscale<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>,
+</span></span><span style="display:flex;"><span>        reversescale<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
+</span></span><span style="display:flex;"><span>        marker_line_color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;darkgray&#39;</span>,
+</span></span><span style="display:flex;"><span>        marker_line_width<span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span>,
+</span></span><span style="display:flex;"><span>        colorbar_tickprefix <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;C&#39;</span>,
+</span></span><span style="display:flex;"><span>        colorbar_title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Temperature&#39;</span>,
+</span></span><span style="display:flex;"><span>        zmin<span style="color:#f92672">=-</span>df[<span style="color:#e6db74">&#39;temperature&#39;</span>]<span style="color:#f92672">.</span>min(), zmax<span style="color:#f92672">=</span>df[<span style="color:#e6db74">&#39;temperature&#39;</span>]<span style="color:#f92672">.</span>max()
+</span></span><span style="display:flex;"><span>    ))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>fig <span style="color:#f92672">=</span> go<span style="color:#f92672">.</span>Figure(data<span style="color:#f92672">=</span>years_sliders)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>steps <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(years)):
+</span></span><span style="display:flex;"><span>    step <span style="color:#f92672">=</span> dict(
+</span></span><span style="display:flex;"><span>        method<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;update&#34;</span>,
+</span></span><span style="display:flex;"><span>        args<span style="color:#f92672">=</span>[{<span style="color:#e6db74">&#34;visible&#34;</span>: [<span style="color:#66d9ef">False</span>] <span style="color:#f92672">*</span> len(fig<span style="color:#f92672">.</span>data)},
+</span></span><span style="display:flex;"><span>              {<span style="color:#e6db74">&#34;title&#34;</span>: <span style="color:#e6db74">&#34;Year: &#34;</span> <span style="color:#f92672">+</span> str(years[i])}],
+</span></span><span style="display:flex;"><span>              label<span style="color:#f92672">=</span>str(years[i])  <span style="color:#75715e"># layout attribute</span>
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>    step[<span style="color:#e6db74">&#34;args&#34;</span>][<span style="color:#ae81ff">0</span>][<span style="color:#e6db74">&#34;visible&#34;</span>][i] <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>  <span style="color:#75715e"># Toggle i&#39;th trace to &#34;visible&#34;</span>
+</span></span><span style="display:flex;"><span>    steps<span style="color:#f92672">.</span>append(step)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sliders <span style="color:#f92672">=</span> [dict(
+</span></span><span style="display:flex;"><span>    active<span style="color:#f92672">=</span>len(years),
+</span></span><span style="display:flex;"><span>    currentvalue<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#34;prefix&#34;</span>: <span style="color:#e6db74">&#34;Steps: &#34;</span>},
+</span></span><span style="display:flex;"><span>    pad<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#34;t&#34;</span>: <span style="color:#ae81ff">50</span>},
+</span></span><span style="display:flex;"><span>    steps<span style="color:#f92672">=</span>steps,
+</span></span><span style="display:flex;"><span>)]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>geo<span style="color:#f92672">=</span>dict(
+</span></span><span style="display:flex;"><span>        showframe<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
+</span></span><span style="display:flex;"><span>        showcoastlines<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
+</span></span><span style="display:flex;"><span>        projection_type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;orthographic&#39;</span>
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>fig<span style="color:#f92672">.</span>update_layout(
+</span></span><span style="display:flex;"><span>    sliders<span style="color:#f92672">=</span>sliders,
+</span></span><span style="display:flex;"><span>    geo<span style="color:#f92672">=</span>geo
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>fig<span style="color:#f92672">.</span>data[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>visible <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>fig<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
 ]]></content></item><item><title>Narrow Escape Visualization</title><link>/posts/narrow-escape/</link><pubDate>Thu, 28 Oct 2021 13:45:50 +0100</pubDate><guid>/posts/narrow-escape/</guid><description>The Narrow Escape Problem is a bio physics problem which attempts to estimate how long it takes for a particle moving under Brownian motion to escape from a container with solid walls, where part of the wall is open.
 Recently we published a software library for building narrow escape simulations. We also used this to discuss its use in determining the escape time for small molecules from plant cells.
 I&amp;rsquo;ve recently been working with plotly to create interactive plots.</description><content type="html"><![CDATA[<p>The <a href="https://en.wikipedia.org/wiki/Narrow_escape_problem" title="NEP">Narrow Escape Problem</a> is a bio physics problem which attempts to estimate how long it takes for a particle moving under Brownian motion to escape from a container with solid walls, where part of the wall is open.</p>
