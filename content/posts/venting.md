@@ -1,7 +1,7 @@
 ---
 title: "Venting"
 date: 2022-03-09T15:25:15Z
-draft: true
+draft: false
 ---
 
 I find myself compelled to write here for two reasons:
