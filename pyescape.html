@@ -411,7 +411,7 @@ def escape(r, cur_pos, delta, pore_locs, pore_size, check_func, max_steps=1e10, 
             idx += 1
             new_pos = cur_pos+pot_steps[idx]
         cur_pos = new_pos
-        steps+=1
+        steps+=1;idx+=1
     return -1
 
 def check_func(p, r):
@@ -470,7 +470,7 @@ def passthrough_pore(p,p0, r=1, tol=1):
                             res_t = [r[0] for r in res]
                             res_loc = [r[1] for r in res]
                             np.savetxt(f"./results/NEP_Sphere_{p}Pores_{N}Reps_{D}D_{v}V_{a}A_{dt}dt.csv", res_t)
-                            np.savetxt(f"./exits/NEP_Sphere_{p}Pores_{N}Reps_{D}, res_loc}
+                            np.savetxt(f"./exits/NEP_Sphere_{p}Pores_{N}Reps_{D}", res_loc)
                         </code></pre>
                 </section>
 
