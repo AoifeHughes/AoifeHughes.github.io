@@ -315,8 +315,15 @@
                     <h2>What is the narrow escape problem</h2>
                 </section>
 
-
                 <section data-auto-animate>
+                    <div class="grid-images1">
+                        <div class="grid-images-item">
+                            <iframe src="./subfiles/NEP.html" style="height: 900px; width: 900px;"></iframe>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- <section data-auto-animate>
                     <div class="grid-images1">
                         <div class="grid-images-item">
                             <video src="./figures/NEP_v.mp4" style="width: 50%;"></video>
@@ -330,7 +337,7 @@
                             <video data-autoplay src="./figures/NEP_v.mp4" style="width: 50%;"></video>
                         </div>
                     </div>
-                </section>
+                </section> -->
 
                 <section data-auto-animate>
                     <div class='grid-images1'>
@@ -389,73 +396,35 @@
                 </section>
 
                 <section data-auto-animate>
-
-                    <pre><code data-trim data-noescape class="stretch" data-line-numbers="|1">        
-        pot_steps = fibonacci_spheres(max_steps, delta)
-        if track:
-            steps = np.zeros(len(pot_steps), dtype=np.int32)
-            step_iter = iter(range(len(steps)))
-        idx = 0
-        while idx < len(pot_steps):
-            new_pos = cur_pos+pot_steps[idx]
-            while (not check_func(new_pos, r)) and idx < max_steps:
-                if passthrough_pore(new_pos, pore_locs, r=pore_size, tol=tol):
-                        return ( pot_steps[steps[steps>0]], (idx+1)*dt ) if track else (idx+1)*dt
-                idx += 1
-                new_pos = cur_pos+pot_steps[idx]
-            cur_pos = new_pos
-            if track:
-                steps[next(step_iter)] = idx
-            idx+=1 
-        return 0
-                    </code></pre>
-                </section>
-
-
-                <section data-auto-animate>
-                    <h2>Generating movements</h2>
-
-                    <div class='grid-images2'>
-                        <div class='grid-images-item'>
-                            <pre><code data-trim data-noescape class="stretch" data-line-numbers="|1|2|3|4|5">        
-                                    goldenRatio = (1 + 5**0.5)/2
-                                    i = arange(0, n)
-                                    theta = 2 *pi * i / goldenRatio
-                                    phi = arccos(1 - 2*(i+0.5)/n)
-                                    x, y, z = cos(theta) * sin(phi), sin(theta) * sin(phi), cos(phi)
-                                                    </code></pre>
-                        </div>
-                        <div class="grid-images-item">
-                            <img src="./figures/npores.png" style="width:90%">
-                        </div>
-                    </div>
-
-
-                </section>
-
-                <section data-auto-animate>
                     <h2>The "escape" algorithm</h2>
 
-                    <pre><code data-trim data-noescape class="stretch" data-line-numbers="1|2-4|6-16|7|8-12|8|9-10|11-12|13|14-16|">        
-        pot_steps = fibonacci_spheres(max_steps, delta)
-        if track:
-            steps = np.zeros(len(pot_steps), dtype=np.int32)
-            step_iter = iter(range(len(steps)))
-        idx = 0
-        while idx < len(pot_steps):
+                    <pre><code data-trim data-noescape class="language-python stretch" data-line-numbers="|1|2|3-4|5-13|5|6|7|16-17|8-9|19-20|10-11|7|11|12-13|5-14|">        
+def escape(r, cur_pos, delta, pore_locs, pore_size, check_func, max_steps=1e10, tol=1, dt=1e-8):
+    pot_steps = fibonacci_spheres(max_steps, delta)
+    idx = 0
+    steps=0
+    while idx < len(pot_steps):
+        new_pos = cur_pos+pot_steps[idx]
+        while (not check_func(new_pos, r)) and idx < max_steps: # while not in container (invalid movement)
+            if passthrough_pore(new_pos, pore_locs, r=pore_size, tol=tol):
+                    return (steps+1)*dt
+            idx += 1
             new_pos = cur_pos+pot_steps[idx]
-            while (not check_func(new_pos, r)) and idx < max_steps:
-                if passthrough_pore(new_pos, pore_locs, r=pore_size, tol=tol):
-                        return ( pot_steps[steps[steps>0]], (idx+1)*dt ) if track else (idx+1)*dt
-                idx += 1
-                new_pos = cur_pos+pot_steps[idx]
-            cur_pos = new_pos
-            if track:
-                steps[next(step_iter)] = idx
-            idx+=1 
-        return 0
+        cur_pos = new_pos
+        steps+=1
+    return -1
+
+def check_func(p, r):
+    return np.linalg.norm(p) < r
+
+def passthrough_pore(p,p0, r=1, tol=1):
+    return np.any(np.linalg.norm(p-p0, axis=1) < r*tol)
                     </code></pre>
+                    <div style="padding-top: 0%;">
+                        <p> <small> <sup>1</sup> <a href="https://github.com/AoifeHughes/NarrowEscapeSimulator/blob/master/PyEscape/escape_plan.py">https://github.com/AoifeHughes/NarrowEscapeSimulator/blob/master/PyEscape/escape_plan.py</a>  </small> </p>
+                    </div>
                 </section>
+
 
             </section>
 
