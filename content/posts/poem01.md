@@ -22,7 +22,7 @@ Fill this head with ideas,
 
 that convince her you're not real 
 
-you're just someone who lives in a bottom in your attic
+you're just someone who lives in a bottle in your attic
 
 and now we're both empty 
 
