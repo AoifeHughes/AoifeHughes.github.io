@@ -54,22 +54,7 @@ baseurl = "/"
     homeSubtitle = "A place for things I find interesting, from Science to Programming and a lot of Gaming"
 
 
-    [[params.social]]
-    name = "twitch"
-    url = "https://www.twitch.tv/aoifehughes__"
-
-    [[params.social]]
-    name = "youtube"
-    url = "https://www.youtube.com/channel/UCoj4IBtY8F9zcbApICOCuqw"
-
-    [[params.social]]
-    name = "twitter"
-    url = "https://twitter.com/AoifeHughes__"
-
-    [[params.social]]
-    name = "instagram"
-    url = "https://instagram.com/Aoife.1.Hughes"
-
+ 
     [[params.social]]
     name = "github"
     url = "https://github.com/AoifeHughes"
