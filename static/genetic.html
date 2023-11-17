@@ -1,0 +1,585 @@
+<!doctype html>
+<html>
+
+<head>
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <script>
+        function resizeIframe(obj) {
+            obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+        }
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Making sure that my computer science degree isn't going to waste</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/white.css">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/nord.css">
+    <style>
+        .reveal h1,
+        .reveal h2,
+        .reveal h3,
+        .reveal h4,
+        .reveal h5 {
+            text-transform: none;
+        }
+        
+        .item1 {
+            grid-area: morrisGroup;
+        }
+        
+        .item2 {
+            grid-area: faulknerGroup;
+        }
+        
+        .item3 {
+            grid-area: jic;
+        }
+        
+        .item4 {
+            grid-area: dtp;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-areas: 'morrisGroup faulknerGroup jic' 'morrisGroup faulknerGroup dtp';
+            grid-gap: 10px;
+            padding: 10px;
+        }
+        
+        .grid-container>div {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+        
+        .header-right {
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+        }
+        
+        .grid-images1 {
+            display: grid;
+            grid-template-columns: auto;
+            padding: 10px;
+        }
+        
+        .grid-images2 {
+            display: grid;
+            grid-template-columns: auto auto;
+            padding: 10px;
+        }
+        
+        .grid-images3 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+        }
+        
+        .grid-images4 {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            padding: 0px;
+        }
+        
+        .grid-images-item {
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <section>
+
+                <section data-auto-animate>
+
+                </section>
+
+                <section data-auto-animate>
+                    <h1>Disclaimer*</h1>
+                </section>
+
+                <section data-auto-animate>
+                    <h1>Disclaimer*</h1>
+
+                    <h2 style="padding-top: 50px;">Much of the work I'll present is based off a fun idea</h2>
+                </section>
+
+
+                <section data-auto-animate>
+                    <h1>Disclaimer*</h1>
+                    <h2 style="padding-top: 50px;">Much of the work I'll present is based off a fun idea</h2>
+                    <h2 style="padding-top: 50px;">There ARE several major
+                    flaws, but this is primarily a proof of concept</h2>
+                </section>
+
+                <section data-auto-animate>
+                    <h1>Disclaimer*</h1>
+                    <h2 style="padding-top: 50px;">Much of the work I'll present is based off a fun idea</h2>
+                    <h2 style="padding-top: 50px;">There ARE several major
+                    flaws, but this is primarily a proof of concept</h2>
+                    <h2 style="padding-top: 50px;">And I thought this would be
+                    more interesting than listening to me talk about LLM prompt
+                    engineering for 15 minutes</h2>
+                </section>
+
+            </section>
+
+
+            <section>
+                <section>
+                    <img src="./figures/celltocell.png" class="stretch">
+                </section>
+                <section>
+                    <img src="./figures/multi-cells.png" class="stretch">
+                </section>
+
+                <section>
+                    <h2>Plasmodesmata aren't just simple holes in the cell wall</h2>
+                    <img src="./figures/realPD.png" class="stretch">
+                    <p><small>Image adapted from Plasmodesmata and the control of symplastic transport, Roberts 2003 </small></p>
+                </section>
+                <section data-auto-animate>
+                    <h2>How do molecules passively escape from cells?</h2>
+                </section>
+                <section data-auto-animate>
+                    <div class="grid-images1">
+                        <div class="grid-images-item">
+                            <iframe src="./subfiles/NEP.html" style="height: 900px; width: 900px;"></iframe>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+
+            <section>
+
+                <section data-auto-animate>
+                    <h3>Plasmodesmata seem to be a little 'random' in their placement</h3>
+                </section>
+                <section data-auto-animate>
+                    <h3>Plasmodesmata seem to be a little 'random' in their placement</h3>
+                    <h3>Could their placement be better optimised?</h3>
+                </section>
+
+                <section data-auto-animate>
+                    <h3>Plasmodesmata seem to be a little 'random' in their placement</h3>
+                    <h3>Could their placement be better optimised?</h3>
+                    <h3>Does it need to be optimised?</h3>
+                </section>
+            </section>
+
+            <section>
+
+                <section data-auto-animate>
+                    <h2>H0: Evenly spacing PD decreases transport time</h2>
+                </section>
+
+
+                <section data-auto-animate>
+                    <h2>H0: Evenly spacing PD decreases transport time</h2>
+                    <div class="grid-images2">
+                        <div class="grid-images-item">
+                            <iframe src="./subfiles/even_pores.html" style="height: 800px; width: 800px;"></iframe>
+                        </div>
+                </section>
+
+
+                <section data-auto-animate>
+                    <h2>H0: Evenly spacing PD decreases transport time</h2>
+                    <div class="grid-images2">
+                        <div class="grid-images-item">
+                            <iframe src="./subfiles/even_pores.html" style="height: 800px; width: 800px;"></iframe>
+                        </div>
+                        <div class="grid-images-item">
+                            <iframe src="./subfiles/random_pores.html" style="height: 800px; width: 800px;"></iframe>
+                        </div>
+                    </div>
+                </section>
+
+                <section data-auto-animate>
+                    <h2>H0: <del>Evenly spacing PD decreases transport time</del></h2>
+                    <div class="grid-images1">
+                        <div class="grid-images-item">
+                            <iframe src="./subfiles/uniform_vs_random.html" style="height: 1500px; width: 1500px;"></iframe>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section data-auto-animate>
+                <h2>H0: <del>Evenly spacing PD decreases transport time</del></h2>
+
+                <h2 style="padding-top: 10%;">H1: "Randomness" of placement in
+                of pores is suboptimal for transport time</h2>
+            </section>
+
+            </section>
+            <section>
+
+                <section data-auto-animate>
+                    <h1>Could some kind of optimization method find better or worse pore placements?</h1>
+                </section>
+
+                <section data-auto-animate>
+                    <h1>Genetic algorithms</h1>
+                    <div class="grid-images2">
+                        <div class="grid-images-item">
+                            <ul style="padding-top: 5%; padding-bottom: 5%;">
+                                <li class="fragment">Generate a population</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section data-auto-animate>
+                    <h1>Genetic algorithms</h1>
+                    <div class="grid-images2">
+                        <div class="grid-images-item">
+                            <ul style="padding-top: 5%; padding-bottom: 5%;">
+                                <li>Generate a population</li>
+                            </ul>
+                        </div>
+                        <div class='grid-images-item'>
+                            <img src="./figures/genetic_algo1.png" style="width: 600px;">
+                        </div>
+                    </div>
+                </section>
+
+                <section data-auto-animate>
+                    <h1>Genetic algorithms</h1>
+                    <div class="grid-images2">
+                        <div class="grid-images-item">
+                            <ul style="padding-top: 5%; padding-bottom: 5%;">
+                                <li>Generate a population</li>
+                                <li>Evaluate fitness</li>
+                            </ul>
+                        </div>
+                        <div class='grid-images-item'>
+                            <img src="./figures/genetic_algo3.png" style="width: 600px;">
+                        </div>
+                    </div>
+                </section>
+
+
+                <section data-auto-animate>
+                    <h1>Genetic algorithms</h1>
+                    <div class="grid-images2">
+                        <div class="grid-images-item">
+                            <ul style="padding-top: 5%; padding-bottom: 5%;">
+                                <li>Generate a population</li>
+                                <li>Evaluate fitness</li>
+                                <li>Select parents</li>
+                            </ul>
+                        </div>
+                        <div class='grid-images-item'>
+                            <img src="./figures/genetic_algo3.png" style="width: 600px;">
+                        </div>
+                    </div>
+                </section>
+
+
+                <section data-auto-animate>
+                    <h1>Genetic algorithms</h1>
+                    <div class="grid-images2">
+                        <div class="grid-images-item">
+                            <ul style="padding-top: 5%; padding-bottom: 5%;">
+                                <li>Generate a population</li>
+                                <li>Evaluate fitness</li>
+                                <li>Select parents</li>
+                                <li>Mating + mutations</li>
+                            </ul>
+                        </div>
+                        <div class='grid-images-item'>
+                            <img src="./figures/genetic_algo2.png" style="width: 600px;">
+                        </div>
+                    </div>
+                </section>
+
+                <section data-auto-animate>
+                    <h1>Genetic algorithms</h1>
+                    <div class="grid-images2">
+                        <div class="grid-images-item">
+                            <ul style="padding-top: 5%; padding-bottom: 5%;">
+                                <li>Generate a population</li>
+                                <li>Evaluate fitness</li>
+                                <li>Select parents</li>
+                                <li>Mating + mutations</li>
+                            </ul>
+                        </div>
+                        <div class='grid-images-item'>
+                            <img src="./figures/genetic_algo4.png" style="width: 600px;">
+                        </div>
+                    </div>
+                </section>
+
+                <section data-auto-animate>
+                    <h1>Genetic algorithms</h1>
+                    <div class="grid-images2">
+                        <div class="grid-images-item">
+                            <ul style="padding-top: 5%; padding-bottom: 5%;">
+                                <li>Generate a population</li>
+                                <li>Evaluate fitness</li>
+                                <li>Select parents</li>
+                                <li>Mating + mutations</li>
+                                <li>Repeat using offspring populaiton</li>
+                            </ul>
+                        </div>
+                        <div class='grid-images-item'>
+                            <img src="./figures/genetic_algo4.png" style="width: 600px;">
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section>
+                <section data-auto-animate>
+                    <h2>Building a Plasmodesmata themed genetic algorithm</h2>
+                </section>
+
+                <section data-auto-animate>
+                    <h2>Generating a population</h2>
+                    <div class="grid-images2">
+                        <div class="grid-images-item">
+                            <img src="./figures/parent_1.png" style="width: 300px;">
+                        </div>
+                        <div class="grid-images-item">
+                            <img src="./figures/parent_2.png" style="width: 300px;">
+                        </div>
+
+                        <div class="grid-images-item">
+                            <img src="./figures/parent_1.png" style="width: 300px; transform:rotate(90deg);">
+                        </div>
+                        <div class="grid-images-item">
+                            <img src="./figures/parent_2.png" style="width: 300px; transform:rotate(90deg);">
+                        </div>
+
+                    </div>
+                </section>
+
+                <section data-auto-animate>
+                    <h1>Evaluate best PD configurations using escape simulations</h1>
+                </section>
+                <section data-auto-animate>
+                    <h1>Evaluate best PD configurations using escape simulations</h1>
+                    <img src="./figures/simulation_N.png" class="stretch">
+
+                </section>
+
+                <section data-auto-animate>
+                    <h2>Parent selection</h2>
+                    <div class="grid-images2">
+                        <div class="grid-images-item">
+                            <h3>Parent 1</h3>
+                            <img src="./figures/parent_1.png" style="width: 600px;">
+                        </div>
+                        <div class="grid-images-item">
+                            <h3>Parent 2</h3>
+                            <img src="./figures/parent_2.png" style="width: 600px;">
+                        </div>
+                    </div>
+                </section>
+
+                <section data-auto-animate>
+                    <h2>Create new generation (and repeat)</h2>
+                    <div class="grid-images2">
+                        <div class="grid-images-item">
+                            <h3>Parent 1</h3>
+                            <img src="./figures/parent_1.png" style="width: 300px;">
+                        </div>
+                        <div class="grid-images-item">
+                            <h3>Parent 2</h3>
+                            <img src="./figures/parent_2.png" style="width: 300px;">
+                        </div>
+
+                        <div class="grid-images-item">
+                            <h3>Offspring 1</h3>
+                            <img src="./figures/offspring_1.png" style="width: 300px;">
+                        </div>
+                        <div class="grid-images-item">
+                            <h3>Offspring 2</h3>
+                            <img src="./figures/offspring_2.png" style="width: 300px;">
+                        </div>
+
+                    </div>
+                </section>
+            </section>
+
+
+            <section>
+                <section>
+                    <h3>1. Generating a Random Population</h3>
+                    <pre><code data-trim data-noescape class="language-python stretch" data-line-numbers="|2">def generate_random_pore_configs():
+            return [np.array(points_on_cube_surface(pore_N, np.cbrt(v))) for _ in range(generation_size)]</code></pre>
+                    <p>This function creates an initial population of random pore configurations, essential for starting the genetic algorithm.</p>
+                </section>
+            
+                <section>
+                    <h3>2. Mutation Function</h3>
+                    <pre><code data-trim data-noescape class="language-python stretch" data-line-numbers="|2|3|4">def mutate(pores):
+            mutations = np.random.random(len(pores))
+            locs = np.where(mutations < mutation_rate)
+            pores[locs] = np.array(points_on_cube_surface(len(locs), np.cbrt(v)))</code></pre>
+                    <p>Mutations introduce variations in the population, crucial for the evolution process in the genetic algorithm.</p>
+                </section>
+            
+                <section>
+                    <h3>3. Fitness Evaluation</h3>
+                    <pre><code data-trim data-noescape class="language-python stretch" data-line-numbers="|2|3-4">def evaluate_individual(pores):
+            setups = [pores for _ in range(reps)]
+            with multiprocessing.Pool(processes=os.cpu_count()) as pool:
+                res = list(pool.imap(calc_escape_time, setups))
+            return np.mean(res)</code></pre>
+                    <p>Evaluating the fitness of each individual in the population to determine their effectiveness in solving the problem.</p>
+                </section>
+            
+                <section>
+                    <h3>4. Parent Selection</h3>
+                    <pre><code class="python">def choose_parents(times):
+            return times.argsort()[:2]</code></pre>
+                    <p>Selecting the fittest individuals from the population to breed and produce the next generation.</p>
+                </section>
+            
+                <section>
+                    <h3>5. Breeding and Creating New Generation</h3>
+                    <pre><code data-trim data-noescape class="language-python stretch" data-line-numbers="1|3-8|4|5|6|7|8">def breed(A, B):
+    individuals = []
+    for _ in range(generation_size):
+        inherit = np.random.random(len(A))
+        C = np.copy(A)
+        locs = np.where(inherit < parent_inherit_divide)
+        C[locs] = B[locs]
+        individuals.append(C)
+    return individuals
+
+                    </code></pre>
+                    <p>This function combines the genetic information of two parents to create new offspring, introducing new variations.</p>
+                </section>
+        
+                <section>
+                    <h3>6. The Main Genetic Algorithm Loop</h3>
+                    <pre><code data-trim data-noescape class="language-python stretch" data-line-numbers="|1|2|3|4-8|7|8|9-10|12|">
+                    for gen in tqdm(range(n_generations)):
+                        fitness = evaluate_generation(cur_gen)
+                        idA, idB = choose_parents(fitness)
+                        for id, p in zip(['A','B'],[cur_gen[idA], cur_gen[idB]]):
+                            t = np.mean(fitness[idA]) if id == 'A' else np.mean(fitness[idB]) 
+                            if id == 'A':
+                                print(f"Best time from generation {gen} is: {t}")
+                            np.savetxt(f"./parents/pore_config_{gen}_{id}_{t}.csv", p)
+                        new_gen = breed(cur_gen[idA], cur_gen[idB])
+                        mutate_pop(new_gen)
+                        # add randomness to pool to shake things up!
+                        new_gen.append(generate_random_pore_configs()[0])
+                        cur_gen = new_gen
+                    </code></pre>
+                    <p>The main loop of the algorithm, where each generation is evaluated, parents are selected, offspring are created, and mutations are applied.</p>
+                </section>
+            </section>
+            
+
+            <section>
+                <section data-auto-animate>
+                    <h1>Can a genetic algorithm find an optimal PD arrangement?</h1>
+                </section>
+
+                <section data-auto-animate>
+                    <h1>Can a genetic algorithm find an optimal PD arrangement?</h1>
+                    <div class="grid-images1">
+                        <div class="grid-images-item">
+                            <iframe src="./subfiles/generations_vs_escape_time.html" style="height: 700px; width: 1500px;"></iframe>
+                        </div>
+                    </div>
+                </section>
+
+                <section data-auto-animate>
+                    <h1>Can a genetic algorithm find an optimal PD arrangement?</h1>
+                    <div class="grid-images1">
+                        <div class="grid-images-item">
+                            <iframe src="./subfiles/generations_vs_escape_time_nearest_pd.html" style="height: 700px; width: 1500px;"></iframe>
+                        </div>
+                    </div>
+                </section>
+
+                <section data-auto-animate>
+                    <h1>Can a genetic algorithm find an optimal PD arrangement?</h1>
+                    <ul style="padding-top: 5%; padding-bottom: 5%;">
+                        <li class="fragment">Maybe...</li>
+                        <li class="fragment">More experimentation needed!</li>
+                        <li class="fragment">Perhaps change experimental setup dramatically</li>
+                        <li class="fragment">Increase/Decrease mutation rates</li>
+                        <li class="fragment">Run for a lot more generations</li>
+                        <li class="fragment">Throw in a few "uniform" distributions to see if patterns are adopted</li>
+                        <li class="fragment">Add sophistication in the mutations i.e. a "jitter" effect in their placement</li>
+                        <li class="fragment">Genetic algorithms are well
+                        researched, and I am very naive, a lot of reading is
+                        needed on my end</li>
+                        <li class="fragment">I should have used a library, but I wanted to use
+                        this as a learning experience</li>
+                    </ul>
+                </section>
+
+                <!-- Any questions slide -->
+
+                <section data-auto-animate>
+                    <h1>Thank you for your attention</h1>
+                </section>
+
+                <section data-auto-animate>
+                    <h1>Thank you for your attention</h1>
+                    <h1>Any questions?</h1>
+                </section>
+
+            </section>
+
+
+
+
+            </div>
+            </div>
+
+            <script src="dist/reveal.js"></script>
+            <script src="plugin/notes/notes.js"></script>
+            <script src="plugin/markdown/markdown.js"></script>
+            <script src="plugin/highlight/highlight.js"></script>
+            <script src="plugin/math/math.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
+            <script src="plugin/chart/plugin.js"></script>
+            <script>
+                // More info about initialization & config:
+                // - https://revealjs.com/initialization/
+                // - https://revealjs.com/config/
+                Reveal.initialize({
+                    hash: true,
+                    width: 1920,
+                    height: 1080,
+                    transition: 'fade',
+
+                    math: {
+                        mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+                        config: 'TeX-AMS_HTML-full',
+                        // pass other options into `MathJax.Hub.Config()`
+                        TeX: {
+                            Macros: {
+                                RR: "{\\bf R}"
+                            }
+                        }
+                    },
+
+                    // Learn about plugins: https://revealjs.com/plugins/
+                    plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath]
+                });
+            </script>
+</body>
+
+</html>
