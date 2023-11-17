@@ -39,6 +39,11 @@ baseurl = "/"
     url = "https://aoifehughes.github.io/pyescape.html"
 
   [[menu.main]]
+    name = "Genetic Plasmodesmata Presentation"
+    url = "https://aoifehughes.github.io/genetic.html"
+
+
+  [[menu.main]]
     name = "Skyrim Randomiser"
     url = "randomsky/"
     weight = 20
