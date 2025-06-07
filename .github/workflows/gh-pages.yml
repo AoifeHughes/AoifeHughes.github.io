@@ -52,9 +52,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-          cache: 'npm'
       - name: Install Node.js dependencies
-        run: npm ci
+        run: npm install
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
