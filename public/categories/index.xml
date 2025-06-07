@@ -2,9 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Aoife&#39;s Blog</title>
-    <link>/categories/</link>
+    <link>//localhost:1313/categories/</link>
     <description>Recent content in Categories on Aoife&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-gb</language><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Sep 2022 20:09:47 +0100</lastBuildDate>
+    <atom:link href="//localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Poetry</title>
+      <link>//localhost:1313/categories/poetry/</link>
+      <pubDate>Thu, 29 Sep 2022 20:09:47 +0100</pubDate>
+      <guid>//localhost:1313/categories/poetry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Personal</title>
+      <link>//localhost:1313/categories/personal/</link>
+      <pubDate>Thu, 29 Sep 2022 18:32:02 +0100</pubDate>
+      <guid>//localhost:1313/categories/personal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gaming</title>
+      <link>//localhost:1313/categories/gaming/</link>
+      <pubDate>Thu, 30 Dec 2021 17:40:54 +0000</pubDate>
+      <guid>//localhost:1313/categories/gaming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Board Games</title>
+      <link>//localhost:1313/categories/board-games/</link>
+      <pubDate>Wed, 29 Dec 2021 19:23:09 +0000</pubDate>
+      <guid>//localhost:1313/categories/board-games/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reviews</title>
+      <link>//localhost:1313/categories/reviews/</link>
+      <pubDate>Wed, 29 Dec 2021 19:23:09 +0000</pubDate>
+      <guid>//localhost:1313/categories/reviews/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technology</title>
+      <link>//localhost:1313/categories/technology/</link>
+      <pubDate>Sun, 14 Nov 2021 15:15:29 +0000</pubDate>
+      <guid>//localhost:1313/categories/technology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Science</title>
+      <link>//localhost:1313/categories/data-science/</link>
+      <pubDate>Thu, 04 Nov 2021 00:57:10 +0100</pubDate>
+      <guid>//localhost:1313/categories/data-science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Research</title>
+      <link>//localhost:1313/categories/research/</link>
+      <pubDate>Thu, 28 Oct 2021 13:45:50 +0100</pubDate>
+      <guid>//localhost:1313/categories/research/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

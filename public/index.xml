@@ -2,81 +2,130 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Aoife&#39;s Blog</title>
-    <link>/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content on Aoife&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-gb</language>
-    <lastBuildDate>Thu, 30 Dec 2021 17:40:54 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Sep 2022 20:09:47 +0100</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Poem01</title>
+      <link>//localhost:1313/blog/poem01/</link>
+      <pubDate>Thu, 29 Sep 2022 20:09:47 +0100</pubDate>
+      <guid>//localhost:1313/blog/poem01/</guid>
+      <description>&lt;p&gt;Waste away your life&lt;/p&gt;&#xA;&lt;p&gt;and all your past lives&lt;/p&gt;&#xA;&lt;p&gt;all these things that push me&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Poem00</title>
+      <link>//localhost:1313/blog/poem00/</link>
+      <pubDate>Thu, 29 Sep 2022 19:28:50 +0100</pubDate>
+      <guid>//localhost:1313/blog/poem00/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m in a mirror, swimming at night.&lt;/p&gt;&#xA;&lt;p&gt;Those numbers are just null and void to me now&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>September 2022</title>
+      <link>//localhost:1313/blog/september2022/</link>
+      <pubDate>Thu, 29 Sep 2022 18:32:02 +0100</pubDate>
+      <guid>//localhost:1313/blog/september2022/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;“And so with the sunshine and the great bursts of leaves growing on the trees, just as things grow in fast movies, I had that familiar conviction that life was beginning over again with the summer.”&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Top 5 Games 2021</title>
-      <link>/posts/top-5-games-2021/</link>
+      <link>//localhost:1313/blog/top-5-games-2021/</link>
       <pubDate>Thu, 30 Dec 2021 17:40:54 +0000</pubDate>
-      
-      <guid>/posts/top-5-games-2021/</guid>
-      <description>About this list! Before I list my top games of 2021 I want to make clear that this is purely a list of the games which I enjoyed the most in 2021. Meaning a few of the games released quite a few years prior. These aren&amp;rsquo;t reviews, and I will avoid spoilers!
-(Here is a full video of this article on my YouTube channel)
-
-# 5. Chivalry 2. Most nights, when I have time to play games, I don&amp;rsquo;t have the energy for story heavy or intense gameplay sessions.</description>
+      <guid>//localhost:1313/blog/top-5-games-2021/</guid>
+      <description>&lt;h2 id=&#34;about-this-list&#34;&gt;About this list!&lt;/h2&gt;&#xA;&lt;p&gt;Before I list my top games of 2021 I want to make clear that this is purely a list of the games which I enjoyed the most in 2021. Meaning a few of the games released quite a few years prior. These aren&amp;rsquo;t reviews, and I will avoid spoilers!&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>A review of Marvel Champions the Living Card Game</title>
-      <link>/posts/marvel-champions-review/</link>
+      <link>//localhost:1313/blog/marvel-champions-review/</link>
       <pubDate>Wed, 29 Dec 2021 19:23:09 +0000</pubDate>
-      
-      <guid>/posts/marvel-champions-review/</guid>
-      <description>Intro Marvel champions is the latest living card game (LCG) from fantasy flight games. If you are familiar with other entries in this series of games, such as Arkham Horror The Card Game, then not much introduction is needed. These games come with a core set that gets you started and allows/encourages you to expand your gameplay through additional expansion packs. Unlike some games on the market, these LCGs and their expansions are not randomised and you always know what you’re getting in your box/card pack.</description>
+      <guid>//localhost:1313/blog/marvel-champions-review/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/mv0.png&#34; alt=&#34;img0&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Marvel champions is the latest living card game (LCG) from fantasy flight games. If you are familiar with other entries in this series of games, such as Arkham Horror The Card Game, then not much introduction is needed. These games come with a core set that gets you started and allows/encourages you to expand your gameplay through additional expansion packs. Unlike some games on the market, these LCGs and their expansions are not randomised and you always know what you’re getting in your box/card pack.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Computational Modelling with Apple Silicon</title>
-      <link>/posts/m1modelling/</link>
+      <link>//localhost:1313/blog/m1modelling/</link>
       <pubDate>Sun, 14 Nov 2021 15:15:29 +0000</pubDate>
-      
-      <guid>/posts/m1modelling/</guid>
-      <description>Ever since Apple Silicon was announced I was enthralled and curious. Even as reviews and benchmarks came pouring in after the original M1 Macbook Pro, Mini and Air released I was skeptical. Working in research we often find that tools we depend on are ancient by computer standards, even worse is that some of them are either difficult to build/update or are closed source (or worse still, written in PERL!). Which highlights my major fear of Apple&amp;rsquo;s new direction, I was initially terrified that almost all of my pipelines and tools would die in x86 and I would be forced to migrate to, ugh, Windows.</description>
+      <guid>//localhost:1313/blog/m1modelling/</guid>
+      <description>&lt;p&gt;Ever since Apple Silicon was announced I was enthralled and curious. Even as reviews and benchmarks came pouring in after the original M1 Macbook Pro, Mini and Air released I was skeptical. Working in research we often find that tools we depend on are ancient by computer standards, even worse is that some of them are either difficult to build/update or are closed source (or worse still, written in PERL!).&#xA;Which highlights my major fear of Apple&amp;rsquo;s new direction, I was initially terrified that almost all of my pipelines and tools would die in x86 and I would be forced to migrate to, ugh, Windows. This fear quickly subsided when a colleague in my office picked up a M1 Macbook and told me how easy it was for them to setup for data analysis/research. I then had the opportunity to test my curiosity about these new machines, I asked this friend of mine if he would run one of my example computational models. I was completely floored by the results of this request.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Visualising World Temperature Data</title>
-      <link>/posts/temp-data/</link>
+      <link>//localhost:1313/blog/temp-data/</link>
       <pubDate>Thu, 04 Nov 2021 00:57:10 +0100</pubDate>
-      
-      <guid>/posts/temp-data/</guid>
-      <description>I like to start with the end result of a project, just to show if this is what you&amp;rsquo;re looking for before you read:
- Some caveats:
- These data are limited to what a 10 second google search yielded (I found it on Kaggle) Data are approximately matched to country codes in order to streamline things Year range of data is very limited Code is written in an obtuse way in order to make clear what is happening  There is little need for multiple lists matching data codes for example   Some countries are missing data, easily solved with better country code matching and a better data source  Libraries required for this:</description>
+      <guid>//localhost:1313/blog/temp-data/</guid>
+      <description>&lt;p&gt;I like to start with the end result of a project, just to show if this is what you&amp;rsquo;re looking for before you read:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Narrow Escape Visualization</title>
-      <link>/posts/narrow-escape/</link>
+      <link>//localhost:1313/blog/narrow-escape/</link>
       <pubDate>Thu, 28 Oct 2021 13:45:50 +0100</pubDate>
-      
-      <guid>/posts/narrow-escape/</guid>
-      <description>The Narrow Escape Problem is a bio physics problem which attempts to estimate how long it takes for a particle moving under Brownian motion to escape from a container with solid walls, where part of the wall is open.
-Recently we published a software library for building narrow escape simulations. We also used this to discuss its use in determining the escape time for small molecules from plant cells.
-I&amp;rsquo;ve recently been working with plotly to create interactive plots.</description>
+      <guid>//localhost:1313/blog/narrow-escape/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://en.wikipedia.org/wiki/Narrow_escape_problem&#34;&#xA;&#xA;&#xA; title=&#34;NEP&#34;&#xA;&#xA;&#xA;&#xA; target=&#34;_blank&#34;&#xA; &#xA;&#xA;&#xA;&gt;Narrow Escape Problem&lt;/a&gt; is a bio physics problem which attempts to estimate how long it takes for a particle moving under Brownian motion to escape from a container with solid walls, where part of the wall is open.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hello World</title>
-      <link>/posts/hello-world/</link>
+      <link>//localhost:1313/blog/hello-world/</link>
       <pubDate>Tue, 26 Oct 2021 13:28:26 +0100</pubDate>
-      
-      <guid>/posts/hello-world/</guid>
-      <description>Hi, Thanks for coming to my new blog.
-I hope to soon populate it with lots of fun things.</description>
+      <guid>//localhost:1313/blog/hello-world/</guid>
+      <description>&lt;p&gt;Hi,&#xA;Thanks for coming to my new blog.&lt;/p&gt;&#xA;&lt;p&gt;I hope to soon populate it with lots of fun things.&lt;/p&gt;</description>
     </item>
-    
     <item>
-      <title>Skyrim Randomiser</title>
-      <link>/randomsky/</link>
-      <pubDate>Tue, 26 Oct 2021 13:07:22 +0100</pubDate>
-      
-      <guid>/randomsky/</guid>
-      <description>* { box-sizing: border-box; } /* Create three equal columns that floats next to each other */ .column { float: left; width: 50%; padding: 10px; height: auto; /* Should be removed. Only for demonstration */ } /* Clear floats after the columns */ .row:after { content: &#34;&#34;; display: table; clear: both; } select.option { color: black; }   const mqs = [&#34;College of Winterhold&#34;, &#34;Companions&#34;, &#34;Dark Brotherhood&#34;, &#34;</description>
+      <title>Aoife Hughes</title>
+      <link>//localhost:1313/authors/aoife-hughes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/authors/aoife-hughes/</guid>
+      <description>&lt;p&gt;Welcome to my blog! I&amp;rsquo;m Aoife, a researcher and programmer with a passion for computational biology, data science, and gaming. I completed my PhD focusing on computational modelling of biological systems, and I enjoy exploring the intersection of science, technology, and interactive entertainment.&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>Elements</title>
+      <link>//localhost:1313/elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/elements/</guid>
+      <description>&lt;details class=&#34;table-of-content &#34;&gt;&#xA;  &lt;summary&gt;&#xA;    &#xA;      Table of Contents&#xA;    &#xA;  &lt;/summary&gt;&#xA;  &lt;nav id=&#34;TableOfContents&#34;&gt;&#xA;  &lt;ol&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#heading-2&#34;&gt;Heading 2&lt;/a&gt;&#xA;      &lt;ol&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#heading-3&#34;&gt;Heading 3&lt;/a&gt;&#xA;          &lt;ol&gt;&#xA;            &lt;li&gt;&lt;a href=&#34;#heading-4&#34;&gt;Heading 4&lt;/a&gt;&#xA;              &lt;ol&gt;&#xA;                &lt;li&gt;&lt;a href=&#34;#heading-5&#34;&gt;Heading 5&lt;/a&gt;&lt;/li&gt;&#xA;              &lt;/ol&gt;&#xA;            &lt;/li&gt;&#xA;          &lt;/ol&gt;&#xA;        &lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#emphasis&#34;&gt;Emphasis&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#button&#34;&gt;Button&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#link&#34;&gt;Link&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#paragraph&#34;&gt;Paragraph&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#ordered-list&#34;&gt;Ordered List&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#unordered-list&#34;&gt;Unordered List&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#notice&#34;&gt;Notice&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#tab&#34;&gt;Tab&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#accordions&#34;&gt;Accordions&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#code-and-syntax-highlighting&#34;&gt;Code and Syntax Highlighting&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#blockquote&#34;&gt;Blockquote&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#tables&#34;&gt;Tables&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#image&#34;&gt;Image&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#gallery&#34;&gt;Gallery&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#slider&#34;&gt;Slider&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#youtube-video&#34;&gt;Youtube video&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#custom-video&#34;&gt;Custom video&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ol&gt;&#xA;    &lt;/li&gt;&#xA;  &lt;/ol&gt;&#xA;&lt;/nav&gt;&#xA;&lt;/details&gt;&#xA;&#xA;&lt;p&gt;Here is an example of headings. You can use this heading by the following markdown rules. For example: use &lt;code&gt;#&lt;/code&gt; for heading 1 and use &lt;code&gt;######&lt;/code&gt; for heading 6.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>John Doe</title>
+      <link>//localhost:1313/authors/john-doe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/authors/john-doe/</guid>
+      <description>&lt;p&gt;lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr navigation et dolore magna aliqua.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Privacy</title>
+      <link>//localhost:1313/privacy-policy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/privacy-policy/</guid>
+      <description>&lt;h4 id=&#34;responsibility-of-contributors&#34;&gt;Responsibility of Contributors&lt;/h4&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ready to build your next project with Hugo?</title>
+      <link></link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid></guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sam Wilson</title>
+      <link>//localhost:1313/authors/sam-wilson/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/authors/sam-wilson/</guid>
+      <description>&lt;p&gt;lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr navigation et dolore magna aliqua.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What Users Are Saying About Hugoplate</title>
+      <link></link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid></guid>
+      <description></description>
+    </item>
+    <item>
+      <title>William Jacob</title>
+      <link>//localhost:1313/authors/william-jacob/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/authors/william-jacob/</guid>
+      <description>&lt;p&gt;lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr navigation et dolore magna aliqua.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

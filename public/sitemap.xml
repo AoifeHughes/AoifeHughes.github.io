@@ -2,63 +2,184 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2022-09-29T20:09:47+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/blog/</loc>
+    <lastmod>2022-09-29T20:09:47+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/</loc>
+    <lastmod>2022-09-29T20:09:47+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/emptiness/</loc>
+    <lastmod>2022-09-29T20:09:47+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/blog/poem01/</loc>
+    <lastmod>2022-09-29T20:09:47+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/poetry/</loc>
+    <lastmod>2022-09-29T20:09:47+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/poetry/</loc>
+    <lastmod>2022-09-29T20:09:47+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/relationships/</loc>
+    <lastmod>2022-09-29T20:09:47+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/self-perception/</loc>
+    <lastmod>2022-09-29T20:09:47+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2022-09-29T20:09:47+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/loss/</loc>
+    <lastmod>2022-09-29T19:28:50+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/memory/</loc>
+    <lastmod>2022-09-29T19:28:50+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/blog/poem00/</loc>
+    <lastmod>2022-09-29T19:28:50+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/reflection/</loc>
+    <lastmod>2022-09-29T19:28:50+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/career/</loc>
+    <lastmod>2022-09-29T18:32:02+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/happiness/</loc>
+    <lastmod>2022-09-29T18:32:02+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/life/</loc>
+    <lastmod>2022-09-29T18:32:02+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/london/</loc>
+    <lastmod>2022-09-29T18:32:02+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/personal/</loc>
+    <lastmod>2022-09-29T18:32:02+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/phd/</loc>
+    <lastmod>2022-09-29T18:32:02+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/blog/september2022/</loc>
+    <lastmod>2022-09-29T18:32:02+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/gaming/</loc>
     <lastmod>2021-12-30T17:40:54+00:00</lastmod>
   </url><url>
-    <loc>/tags/gaming/</loc>
+    <loc>//localhost:1313/tags/gaming/</loc>
     <lastmod>2021-12-30T17:40:54+00:00</lastmod>
   </url><url>
-    <loc>/tags/lists/</loc>
+    <loc>//localhost:1313/tags/lists/</loc>
     <lastmod>2021-12-30T17:40:54+00:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
+    <loc>//localhost:1313/tags/reviews/</loc>
     <lastmod>2021-12-30T17:40:54+00:00</lastmod>
   </url><url>
-    <loc>/tags/reviews/</loc>
+    <loc>//localhost:1313/blog/top-5-games-2021/</loc>
     <lastmod>2021-12-30T17:40:54+00:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>//localhost:1313/tags/video-games/</loc>
     <lastmod>2021-12-30T17:40:54+00:00</lastmod>
   </url><url>
-    <loc>/posts/top-5-games-2021/</loc>
+    <loc>//localhost:1313/tags/youtube/</loc>
     <lastmod>2021-12-30T17:40:54+00:00</lastmod>
   </url><url>
-    <loc>/tags/video-games/</loc>
-    <lastmod>2021-12-30T17:40:54+00:00</lastmod>
-  </url><url>
-    <loc>/tags/videos/</loc>
-    <lastmod>2021-12-30T17:40:54+00:00</lastmod>
-  </url><url>
-    <loc>/tags/youtube/</loc>
-    <lastmod>2021-12-30T17:40:54+00:00</lastmod>
-  </url><url>
-    <loc>/posts/marvel-champions-review/</loc>
+    <loc>//localhost:1313/blog/marvel-champions-review/</loc>
     <lastmod>2021-12-29T19:23:09+00:00</lastmod>
   </url><url>
-    <loc>/tags/board-games/</loc>
+    <loc>//localhost:1313/categories/board-games/</loc>
     <lastmod>2021-12-29T19:23:09+00:00</lastmod>
   </url><url>
-    <loc>/posts/m1modelling/</loc>
+    <loc>//localhost:1313/tags/board-games/</loc>
+    <lastmod>2021-12-29T19:23:09+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/reviews/</loc>
+    <lastmod>2021-12-29T19:23:09+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/apple-silicon/</loc>
     <lastmod>2021-11-14T15:15:29+00:00</lastmod>
   </url><url>
-    <loc>/tags/modelling/</loc>
+    <loc>//localhost:1313/blog/m1modelling/</loc>
     <lastmod>2021-11-14T15:15:29+00:00</lastmod>
   </url><url>
-    <loc>/posts/temp-data/</loc>
+    <loc>//localhost:1313/tags/modelling/</loc>
+    <lastmod>2021-11-14T15:15:29+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/performance/</loc>
+    <lastmod>2021-11-14T15:15:29+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/research/</loc>
+    <lastmod>2021-11-14T15:15:29+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/technology/</loc>
+    <lastmod>2021-11-14T15:15:29+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/data-science/</loc>
     <lastmod>2021-11-04T00:57:10+01:00</lastmod>
   </url><url>
-    <loc>/posts/narrow-escape/</loc>
+    <loc>//localhost:1313/tags/data-visualization/</loc>
+    <lastmod>2021-11-04T00:57:10+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/maps/</loc>
+    <lastmod>2021-11-04T00:57:10+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/plotly/</loc>
+    <lastmod>2021-11-04T00:57:10+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/python/</loc>
+    <lastmod>2021-11-04T00:57:10+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/temperature/</loc>
+    <lastmod>2021-11-04T00:57:10+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/blog/temp-data/</loc>
+    <lastmod>2021-11-04T00:57:10+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/biophysics/</loc>
     <lastmod>2021-10-28T13:45:50+01:00</lastmod>
   </url><url>
-    <loc>/posts/hello-world/</loc>
+    <loc>//localhost:1313/blog/narrow-escape/</loc>
+    <lastmod>2021-10-28T13:45:50+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/research/</loc>
+    <lastmod>2021-10-28T13:45:50+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/simulation/</loc>
+    <lastmod>2021-10-28T13:45:50+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/visualization/</loc>
+    <lastmod>2021-10-28T13:45:50+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/blog/hello-world/</loc>
     <lastmod>2021-10-26T13:28:26+01:00</lastmod>
   </url><url>
-    <loc>/tags/untagged/</loc>
+    <loc>//localhost:1313/tags/welcome/</loc>
     <lastmod>2021-10-26T13:28:26+01:00</lastmod>
   </url><url>
-    <loc>/randomsky/</loc>
-    <lastmod>2021-10-26T13:07:22+01:00</lastmod>
+    <loc>//localhost:1313/about/</loc>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>//localhost:1313/authors/aoife-hughes/</loc>
+  </url><url>
+    <loc>//localhost:1313/authors/</loc>
+  </url><url>
+    <loc>//localhost:1313/contact/</loc>
+  </url><url>
+    <loc>//localhost:1313/elements/</loc>
+  </url><url>
+    <loc>//localhost:1313/authors/john-doe/</loc>
+  </url><url>
+    <loc>//localhost:1313/pages/</loc>
+  </url><url>
+    <loc>//localhost:1313/privacy-policy/</loc>
+  </url><url>
+    <loc>//localhost:1313/research/</loc>
+  </url><url>
+    <loc>//localhost:1313/authors/sam-wilson/</loc>
+  </url><url>
+    <loc>//localhost:1313/sections/</loc>
+  </url><url>
+    <loc>//localhost:1313/authors/william-jacob/</loc>
   </url>
 </urlset>
