@@ -36,4 +36,16 @@ features:
       label: "Explore the Visualization"
       link: "/blog/temp-data"
 
+  - title: "Language Modelling: Student Handbook"
+    image: "/images/language-modelling-slides-thumb.png"
+    content: "A slide deck teaching how large language models actually work, then setting students loose to break one on purpose and fine-tune one of their own."
+    bulletpoints:
+      - "Next-token prediction, temperature & top-k, RLHF"
+      - "Hands-on: an LLM password-extraction challenge"
+      - "Hands-on: fine-tuning a small local model with LoRA"
+    button:
+      enable: true
+      label: "View the Slides"
+      link: "/slides/language-modelling/"
+
 ---
