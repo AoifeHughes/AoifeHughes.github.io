@@ -14,6 +14,7 @@
     "update-modules": "node ./scripts/clearModules.js && hugo mod clean --all && hugo mod get -u ./... && hugo mod tidy",
     "remove-darkmode": "node ./scripts/removeDarkmode.js && yarn format",
     "project-setup": "node ./scripts/projectSetup.js",
+    "build:llm-password-challenge": "bash ./scripts/build-llm-password-challenge.sh",
     "theme-setup": "node ./scripts/themeSetup.js",
     "update-theme": "node ./scripts/themeUpdate.js",
     "format": "prettier -w ."
