@@ -4,6 +4,3 @@
 [submodule "themes/hermit"]
 	path = themes/hermit
 	url = https://github.com/Track3/hermit.git
-[submodule "submodules/LLM-password-challenge"]
-	path = submodules/LLM-password-challenge
-	url = git@github.com:esl-lewis/LLM-password-challenge.git

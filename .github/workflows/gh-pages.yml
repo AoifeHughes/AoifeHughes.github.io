@@ -45,11 +45,6 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
-          # LLM-password-challenge is a private submodule owned by another
-          # user, so the default GITHUB_TOKEN can't fetch it. Add a
-          # SUBMODULE_PAT repo secret (a PAT with access to that repo) or
-          # this checkout will fail to init that submodule.
-          token: ${{ secrets.SUBMODULE_PAT || github.token }}
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
@@ -59,8 +54,6 @@ jobs:
           node-version: '22'
       - name: Install Node.js dependencies
         run: npm install
-      - name: Build LLM Password Challenge subsite
-        run: npm run build:llm-password-challenge
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
