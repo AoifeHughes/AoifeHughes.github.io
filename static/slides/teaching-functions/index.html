@@ -34,10 +34,11 @@
       .code-line .step-text {
         min-width: 0;
       }
-      /* indented continuation lines (used inside if/elif blocks) */
-      .code-line.indent {
-        padding-left: 2em;
-        grid-template-columns: 2.6em minmax(0, 1fr);
+      /* indented continuation lines (used inside if/elif blocks) — indent
+         only the instruction text so the line-number gutter stays aligned
+         with the rest of the block */
+      .code-line.indent .step-text {
+        padding-left: 1.2em;
       }
       .code-line .ln {
         color: var(--ink-dim);
@@ -316,9 +317,8 @@
       }
 
       /* nested (2-level) indent — e.g. a line inside a for-loop inside a function */
-      .code-line.indent2 {
-        padding-left: 4em;
-        grid-template-columns: 2.6em minmax(0, 1fr);
+      .code-line.indent2 .step-text {
+        padding-left: 2.4em;
       }
 
       /* control-flow line (if / elif) inside a code block */
@@ -326,7 +326,6 @@
         color: var(--cool);
         font-family: var(--mono);
       }
-      .code-line:has(.step-ctrl) { padding-left: 0.8em; }
 
       /* ---- slide 7: highlighted token inside a step-text ---- */
       .code-line .hl { color: var(--accent); }
@@ -749,13 +748,34 @@
           </div>
         </section>
 
-        <!-- ============ SLIDE 6 — if only… (V1: blank title centred; V2: title slides to top, function body with if-with_milk for step 8) ============ -->
+        <!-- ============ SLIDE 6 — if only… (V1: blank title centred; V2: plain function, no args; V3: title slides to top, function body with if-with_milk for step 8) ============ -->
         <section data-auto-animate>
           <!-- V1: blank, title centred -->
           <section class="hero-only">
             <h1 class="hero-title">If only…</h1>
           </section>
-          <!-- V2: title at top, content revealed -->
+          <!-- V2: title at top, plain function, no arguments yet -->
+          <section data-auto-animate>
+            <h2 class="hero-title">If only there was a better way…</h2>
+            <div class="with-teapt">
+              <div id="teapt-s6a"></div>
+              <div>
+                <p style="margin:0 0 0.6em 0;font-family:var(--sans);">We wrap the steps in a <strong style="color:var(--accent);">function</strong>:</p>
+                <div class="fn-call"><span class="fn-name">make_tea</span><span class="fn-punct">()</span></div>
+                <div class="code-block" style="margin-top:0.6em;">
+                  <div class="code-line"><span class="ln">1</span><span class="step-text"><span class="step-n">Step 1:</span> boil water</span></div>
+                  <div class="code-line"><span class="ln">2</span><span class="step-text"><span class="step-n">Step 2:</span> get cup</span></div>
+                  <div class="code-line"><span class="ln">3</span><span class="step-text"><span class="step-n">Step 3:</span> get a teabag</span></div>
+                  <div class="code-line"><span class="ln">4</span><span class="step-text"><span class="step-n">Step 4:</span> put teabag in cup</span></div>
+                  <div class="code-line"><span class="ln">5</span><span class="step-text"><span class="step-n">Step 5:</span> add boiled water to cup</span></div>
+                  <div class="code-line"><span class="ln">6</span><span class="step-text"><span class="step-n">Step 6:</span> wait 1 minute</span></div>
+                  <div class="code-line"><span class="ln">7</span><span class="step-text"><span class="step-n">Step 7:</span> use spoon to remove teabag</span></div>
+                </div>
+              </div>
+            </div>
+            <p class="slide-note">// one name.  One recipe.  No inputs yet — it always does exactly the same thing.</p>
+          </section>
+          <!-- V3: title at top, function gains a with_milk argument, content revealed -->
           <section data-auto-animate>
             <h2 class="hero-title">If only there was a better way…</h2>
             <div class="with-teapt">
@@ -771,7 +791,7 @@
                   <div class="code-line"><span class="ln">5</span><span class="step-text"><span class="step-n">Step 5:</span> add boiled water to cup</span></div>
                   <div class="code-line"><span class="ln">6</span><span class="step-text"><span class="step-n">Step 6:</span> wait 1 minute</span></div>
                   <div class="code-line"><span class="ln">7</span><span class="step-text"><span class="step-n">Step 7:</span> use spoon to remove teabag</span></div>
-                  <div class="code-line"><span class="ln">&nbsp;</span><span class="step-text step-ctrl">if with_milk:</span></div>
+                  <div class="code-line indent"><span class="ln">&nbsp;</span><span class="step-text step-ctrl">if with_milk:</span></div>
                   <div class="code-line indent"><span class="ln">8</span><span class="step-text"><span class="step-n">Step 8:</span> add milk</span></div>
                 </div>
               </div>
@@ -1123,7 +1143,8 @@
           'teapt-s3':     ['busy', 'repeat after me…'],
           'teapt-s4':     ['confused', 'uh… what?'],
           'teapt-s5':     ['overwhelmed', 'four drinks?'],
-          'teapt-s6':     ['thinking', 'function idea!'],
+          'teapt-s6a':    ['thinking', 'function idea!'],
+          'teapt-s6':     ['thinking', 'one more input?'],
           'teapt-s7-1':   ['deciding', 'tea or coffee?'],
           'teapt-s7-2':   ['happy', 'got it!'],
           'teapt-s8-2':   ['thinking', 'same idea, everywhere'],
