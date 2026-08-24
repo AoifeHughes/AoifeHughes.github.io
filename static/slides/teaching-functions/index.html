@@ -294,7 +294,7 @@
         margin-bottom: 0.3em;
         text-align: center;
       }
-      .mini-panel .code-block { padding: 0.3em 0; }
+      .mini-panel .code-block { padding: 0.3em 0; font-size: 0.30em; overflow: hidden; }
 
       /* ---- slide 6: hero title that starts centred then moves to the top ---- */
       .hero-title {
@@ -584,7 +584,7 @@
           </div>
         </section>
 
-        <!-- ============ SLIDE 5 — it's fine, we'll just be careful (fragments, with TeaPT + final 4-panel summary) ============ -->
+        <!-- ============ SLIDE 5 — it's fine, we'll just be careful (fragments, with TeaPT) ============ -->
         <section>
           <h2>It’s fine, we’ll just be careful</h2>
           <div class="with-teapt slide-5-stage">
@@ -683,12 +683,20 @@
               </div>
             </div>
           </div>
-          <div class="slide-5-summary fragment" data-fragment-index="5">
+          <p class="slide-note" id="note-s5-1">// one recipe, one customer.  Easy.</p>
+          <p class="slide-note fragment" id="note-s5-2" data-fragment-index="2">// new customer, new step.  Append it to the recipe.</p>
+          <p class="slide-note fragment" id="note-s5-3" data-fragment-index="3">// a tweak.  Just edit step 8 — what could go wrong?</p>
+          <p class="slide-note fragment" id="note-s5-4" data-fragment-index="4">// a brand-new recipe.  Edit step 3, edit step 6, hope nothing else breaks.</p>
+        </section>
+
+        <!-- ============ SLIDE 5b — now we're managing 4 things (own slide: doesn't fit alongside the 4-panel customer-lab above) ============ -->
+        <section>
+          <div class="slide-5-summary">
             <h2>Now we’re managing 4 things <span class="warn">⚠️</span></h2>
             <div class="mini-grid">
               <div class="mini-panel">
                 <p class="panel-label">C1 — tea</p>
-                <div class="code-block" style="font-size:0.5em;">
+                <div class="code-block" style="font-size:0.30em;">
                   <div class="code-line"><span class="ln">1</span><span class="step-text"><span class="step-n">Step 1:</span> boil water</span></div>
                   <div class="code-line"><span class="ln">2</span><span class="step-text"><span class="step-n">Step 2:</span> get cup</span></div>
                   <div class="code-line"><span class="ln">3</span><span class="step-text"><span class="step-n">Step 3:</span> get a teabag</span></div>
@@ -700,7 +708,7 @@
               </div>
               <div class="mini-panel">
                 <p class="panel-label">C2 — tea + milk</p>
-                <div class="code-block" style="font-size:0.5em;">
+                <div class="code-block" style="font-size:0.30em;">
                   <div class="code-line"><span class="ln">1</span><span class="step-text"><span class="step-n">Step 1:</span> boil water</span></div>
                   <div class="code-line"><span class="ln">2</span><span class="step-text"><span class="step-n">Step 2:</span> get cup</span></div>
                   <div class="code-line"><span class="ln">3</span><span class="step-text"><span class="step-n">Step 3:</span> get a teabag</span></div>
@@ -713,7 +721,7 @@
               </div>
               <div class="mini-panel">
                 <p class="panel-label">C3 — oat milk</p>
-                <div class="code-block" style="font-size:0.5em;">
+                <div class="code-block" style="font-size:0.30em;">
                   <div class="code-line"><span class="ln">1</span><span class="step-text"><span class="step-n">Step 1:</span> boil water</span></div>
                   <div class="code-line"><span class="ln">2</span><span class="step-text"><span class="step-n">Step 2:</span> get cup</span></div>
                   <div class="code-line"><span class="ln">3</span><span class="step-text"><span class="step-n">Step 3:</span> get a teabag</span></div>
@@ -726,7 +734,7 @@
               </div>
               <div class="mini-panel">
                 <p class="panel-label">C4 — coffee</p>
-                <div class="code-block" style="font-size:0.5em;">
+                <div class="code-block" style="font-size:0.30em;">
                   <div class="code-line"><span class="ln">1</span><span class="step-text"><span class="step-n">Step 1:</span> boil water</span></div>
                   <div class="code-line"><span class="ln">2</span><span class="step-text"><span class="step-n">Step 2:</span> get cup</span></div>
                   <div class="code-line"><span class="ln">3</span><span class="step-text"><span class="step-n">Step 3:</span> get a <span style="color:var(--accent);">coffee bag</span></span></div>
@@ -739,10 +747,6 @@
               </div>
             </div>
           </div>
-          <p class="slide-note" id="note-s5-1">// one recipe, one customer.  Easy.</p>
-          <p class="slide-note fragment" id="note-s5-2" data-fragment-index="2">// new customer, new step.  Append it to the recipe.</p>
-          <p class="slide-note fragment" id="note-s5-3" data-fragment-index="3">// a tweak.  Just edit step 8 — what could go wrong?</p>
-          <p class="slide-note fragment" id="note-s5-4" data-fragment-index="4">// a brand-new recipe.  Edit step 3, edit step 6, hope nothing else breaks.</p>
         </section>
 
         <!-- ============ SLIDE 6 — if only… (V1: blank title centred; V2: title slides to top, function body with if-with_milk for step 8) ============ -->
