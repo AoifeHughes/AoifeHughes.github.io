@@ -45,6 +45,13 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+          # static/slides is a private repo (AoifeHughes/slides); this key
+          # is a read-only deploy key scoped to only that repo. Passing it
+          # via checkout's own ssh-key input (not a separate ssh-agent
+          # step) matters: actions/checkout rewrites git@github.com: URLs
+          # to HTTPS internally unless this input is set, which would
+          # silently break the submodule fetch otherwise.
+          ssh-key: ${{ secrets.SLIDES_DEPLOY_KEY }}
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4

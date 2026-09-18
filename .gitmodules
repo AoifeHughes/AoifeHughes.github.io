@@ -4,3 +4,6 @@
 [submodule "themes/hermit"]
 	path = themes/hermit
 	url = https://github.com/Track3/hermit.git
+[submodule "static/slides"]
+	path = static/slides
+	url = git@github.com:AoifeHughes/slides.git

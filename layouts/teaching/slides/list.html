@@ -1,0 +1,34 @@
+{{ define "main" }}
+  {{ partial "page-header.html" . }}
+  <section class="section">
+    <div class="container">
+      <div class="content">
+        {{ .Content }}
+        <table>
+          <thead>
+            <tr>
+              <th>Preview</th>
+              <th>HTML</th>
+              <th>PDF</th>
+              <th>PPTX</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ range site.Data.teaching_slides }}
+            <tr>
+              <td>
+                <strong>{{ .title }}</strong>
+                <br />
+                {{ .description }}
+              </td>
+              <td>{{ with .html }}<a href="{{ . }}">View (recommended)</a>{{ else }}&mdash;{{ end }}</td>
+              <td>{{ with .pdf }}<a href="{{ . }}">Download PDF</a>{{ else }}&mdash;{{ end }}</td>
+              <td>{{ with .pptx }}<a href="{{ . }}">Download PPTX</a>{{ else }}&mdash;{{ end }}</td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+{{ end }}

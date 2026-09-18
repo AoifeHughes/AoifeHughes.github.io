@@ -1,0 +1,34 @@
+# Teaching resources shown on /teaching/slides/, rendered by
+# layouts/teaching/slides/list.html. Add a new entry here to list a new
+# resource — no template changes needed. `pdf`/`pptx` are optional; a
+# resource with only `html` renders with just the "View" link.
+#
+# Paths are relative to the site root and point into the `static/slides`
+# submodule (vendored from the `AoifeHughes/slides` repo), which mirrors
+# its `decks/<name>/` layout.
+
+- title: "Intro to Python"
+  description: "A crash-course intro to Python for a class of 16-year-olds with zero programming experience, taught live with Spyder."
+  html: "/slides/decks/python-intro/"
+  pdf: "/slides/decks/python-intro/converted/intro-to-python.pdf"
+  pptx: "/slides/decks/python-intro/converted/intro-to-python.pptx"
+
+- title: "What Is a Function?"
+  description: "Building the idea of a function from scratch for Year 10 students, using making tea as the running example."
+  html: "/slides/decks/functions/"
+
+- title: "Cryptography: Run-Length Encoding"
+  description: "A run-length-encoding lesson for ~16 year olds: what encoding means, why we compress, and decoding pictures by hand."
+  html: "/slides/decks/cryptography-problem/"
+  pdf: "/slides/decks/cryptography-problem/converted/cryptography-challenge.pdf"
+  pptx: "/slides/decks/cryptography-problem/converted/cryptography-challenge.pptx"
+
+- title: "Image Analysis: Hidden Messages"
+  description: "A follow-on to Intro to Python: from 'what's a library?' to treating a picture as a grid of numbers, leading into a hidden-message decoding challenge."
+  html: "/slides/decks/image-analysis-problem/"
+  pdf: "/slides/decks/image-analysis-problem/converted/image-analysis-challenge.pdf"
+  pptx: "/slides/decks/image-analysis-problem/converted/image-analysis-challenge.pptx"
+
+- title: "Language Modelling Workshop"
+  description: "A two-session LLM workshop: from GPT to ChatGPT (prompting, RLHF, prompt injection, and a live CTF), then fine-tuning a language model."
+  html: "/slides/decks/language-modelling/"
