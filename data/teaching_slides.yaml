@@ -29,6 +29,10 @@
   pdf: "/slides/decks/image-analysis-problem/converted/image-analysis-challenge.pdf"
   pptx: "/slides/decks/image-analysis-problem/converted/image-analysis-challenge.pptx"
 
+- title: "Guessing Pi with Random Darts"
+  description: "A 15-minute lesson for ~15 year olds: estimating pi by throwing random darts at a square, in plain Python, with animated diagrams."
+  html: "/slides/decks/monte-carlo-pi/"
+
 - title: "Language Modelling Workshop"
   description: "A two-session LLM workshop: from GPT to ChatGPT (prompting, RLHF, prompt injection, and a live CTF), then fine-tuning a language model."
   html: "/slides/decks/language-modelling/"
