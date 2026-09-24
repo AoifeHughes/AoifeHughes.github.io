@@ -21,13 +21,6 @@ name = "Research"
 url = "/research"
 weight = 4
 
-[[main]]
-name = "Blog"
-url = "/blog"
-weight = 5
-
-
-
 # footer menu
 [[footer]]
 name = "About"

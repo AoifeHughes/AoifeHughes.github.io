@@ -18,10 +18,6 @@ features:
       - "Published in IEEE Transactions on Molecular, Biological and Multi-Scale Communications"
       - "Real Plant Cell Transport Physics"
       - "Open Source PyEscape Package"
-    button:
-      enable: true
-      label: "Read the Research Paper"
-      link: "/blog/narrow-escape"
 
   - title: "Global Temperature Data Visualization"
     image: "/images/image-placeholder.png"
@@ -31,10 +27,6 @@ features:
       - "Real-time Map Exploration"
       - "Python & Plotly Implementation"
       - "Open Educational Resources"
-    button:
-      enable: true
-      label: "Explore the Visualization"
-      link: "/blog/temp-data"
 
   - title: "Language Modelling: Student Handbook"
     image: "/images/language-modelling-slides-thumb.png"
