@@ -71,4 +71,4 @@ My research focuses on computational modeling of biological systems, particularl
 
 ---
 
-*For more details about any of these projects or potential collaborations, feel free to connect with me via my [GitHub](https://github.com/AoifeHughes) or through the blog.*
+*For more details about any of these projects or potential collaborations, feel free to connect with me via my [GitHub](https://github.com/AoifeHughes).*

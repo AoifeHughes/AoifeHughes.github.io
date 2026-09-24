@@ -38,6 +38,6 @@ features:
     button:
       enable: true
       label: "View the Slides"
-      link: "/slides/language-modelling/"
+      link: "/slides/decks/language-modelling/"
 
 ---

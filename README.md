@@ -7,8 +7,8 @@ Aoife Hughes' personal website — a Hugo site using the
 ## Layout
 
 - `content/english/` — site content, organised by section: `about/`,
-  `teaching/` (with `teaching/slides/`), `research/`, and
-  `pages/privacy-policy/`.
+  `contact/`, `teaching/` (with `teaching/slides/`), `research/`, and
+  `pages/privacy-policy.md`.
 - `data/` — `theme.json` (colours and fonts), `social.json` (social
   links), `teaching_slides.yaml`.
 - `static/slides` — git submodule of the private `AoifeHughes/slides`

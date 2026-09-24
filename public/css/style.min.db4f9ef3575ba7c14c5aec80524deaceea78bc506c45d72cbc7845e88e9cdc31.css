@@ -184,7 +184,10 @@
   [hidden]:where(:not([hidden="until-found"])) {
     display: none !important;
   }
-}@layer utilities{.collapse {
+}@layer utilities{.\@container {
+    container-type: inline-size;
+  }
+  .collapse {
     visibility: collapse;
   }
   .invisible {
