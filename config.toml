@@ -59,7 +59,7 @@ ordered = true
 
 ########################### Params ###############################
 [params]
-subtitle = "Ph.D. in Computational Biology | Software Sustainability Institute Fellow | Open Source Award Winner"
+subtitle = "Ph.D. in Computational Biology. Currently doing my PGCE with the aim to teach Maths and Computer Science at schools."
 description = "A place for things I find interesting, from Science to Programming and a lot of Gaming"
 author = "Aoife Hughes"
 keywords = ["science", "programming", "gaming", "research"]

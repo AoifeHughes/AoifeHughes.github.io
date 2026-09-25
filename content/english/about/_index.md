@@ -6,7 +6,7 @@ cover: "/images/me.png"
 draft: false
 ---
 
-Hi! I'm Aoife Hughes, a computational biologist, open source advocate, and passionate science communicator. I bridge the gap between complex scientific research and accessible, interactive experiences.
+Hi! I'm Aoife Hughes, a computational biologist, open source advocate, and passionate science communicator. I bridge the gap between complex scientific research and accessible, interactive experiences. I'm currently doing my PGCE with the aim to teach Maths and Computer Science at schools.
 
 ## Education & Research
 

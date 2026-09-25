@@ -1,0 +1,8 @@
+/* Site-specific overrides, loaded last by the theme head
+   (see themes/terminal/layouts/partials/head.html). */
+
+/* Keep portrait covers small — me.png is a headshot, not a hero image. */
+.post-cover {
+  max-width: 260px;
+  height: auto;
+}
