@@ -2,7 +2,7 @@
 title: "Teaching"
 meta_title: "Teaching"
 description: "Teaching materials and slide decks from Aoife Hughes"
-image: "/images/me.png"
+cover: "/images/me.png"
 draft: false
 ---
 

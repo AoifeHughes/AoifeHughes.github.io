@@ -2,7 +2,7 @@
 title: "Research & Publications"
 meta_title: "Research"
 description: "Explore Aoife Hughes' research in computational biology, plant cell signaling, and data science"
-image: "/images/me.png"
+cover: "/images/me.png"
 draft: false
 ---
 

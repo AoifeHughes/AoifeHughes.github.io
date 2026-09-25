@@ -1,0 +1,102 @@
+######################## default configuration ####################
+# The base URL of your site. Local file-served convention is "/";
+# the gh-pages workflow overrides this with --baseURL at build time.
+baseURL = "/"
+languageCode = "en-us"
+title = "Aoife Hughes"
+theme = "terminal"
+copyright = "© 2025 Aoife Hughes. All rights reserved."
+# Default time zone for time stamps
+timeZone = "Europe/London"
+summaryLength = 10
+enableEmoji = true
+enableRobotsTXT = true
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+# Content lives under content/english (carried over from languages.toml).
+contentDir = "content/english"
+
+########################## Permalinks ############################
+[permalinks.page]
+"pages" = "/:slugorcontentbasename/"
+
+########################## Pagination ############################
+[pagination]
+pagerSize = 10
+
+############################# Outputs ############################
+[outputs]
+home = ["HTML", "RSS"]
+
+############################# Imaging ############################
+[imaging]
+quality = 80
+resampleFilter = "Lanczos"
+
+############################ Caches ##############################
+[caches]
+[caches.images]
+dir = ":resourceDir/_gen"
+maxAge = "720h"
+
+[caches.assets]
+dir = ":resourceDir/_gen"
+maxAge = "720h"
+
+############################ Markup ##############################
+[markup]
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+style = 'monokai'
+lineNumbersInTable = false
+
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 5
+ordered = true
+
+########################### Params ###############################
+[params]
+subtitle = "Ph.D. in Computational Biology | Software Sustainability Institute Fellow | Open Source Award Winner"
+description = "A place for things I find interesting, from Science to Programming and a lot of Gaming"
+author = "Aoife Hughes"
+keywords = ["science", "programming", "gaming", "research"]
+showMenuItems = 5
+menuMore = "Show more"
+readMore = "Read more"
+readOtherPosts = "Read other posts"
+dateFormat = ":date_long"
+fullWidthTheme = false
+centerTheme = false
+
+[params.logo]
+logoText = "Aoife Hughes"
+logoHomeLink = "/"
+
+########################### Menus ###############################
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 2
+
+[[menu.main]]
+name = "Teaching"
+url = "/teaching"
+weight = 3
+
+[[menu.main]]
+name = "Research"
+url = "/research"
+weight = 4
+
+[[menu.main]]
+name = "GitHub"
+url = "https://github.com/AoifeHughes"
+weight = 5

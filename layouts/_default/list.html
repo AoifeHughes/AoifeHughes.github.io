@@ -1,0 +1,39 @@
+{{ define "main" }}
+  <article class="post">
+    <h1 class="post-title">
+      <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+    </h1>
+
+    {{ partial "cover.html" . }}
+
+    {{ with .Content }}
+      <div class="post-content">
+        <div>{{ . }}</div>
+      </div>
+    {{ end }}
+
+    {{/* Regular children (sections like teaching/slides are excluded
+         so hub pages that already link to them do not double-list). */}}
+    {{ with .RegularPages }}
+      <div class="posts">
+        {{ range . }}
+          <article class="post on-list">
+            <h2 class="post-title">
+              <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+            </h2>
+            <div class="post-content">
+              {{ with .Description }}
+                <p>{{ . | markdownify }}</p>
+              {{ else }}
+                {{ .Summary }}
+              {{ end }}
+            </div>
+            <div>
+              <a class="read-more button inline" href="{{ .RelPermalink }}">[{{ $.Site.Params.ReadMore }}]</a>
+            </div>
+          </article>
+        {{ end }}
+      </div>
+    {{ end }}
+  </article>
+{{ end }}

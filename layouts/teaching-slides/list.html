@@ -1,8 +1,11 @@
 {{ define "main" }}
-  {{ partial "page-header.html" . }}
-  <section class="section">
-    <div class="container">
-      <div class="content">
+  <article class="post">
+    <h1 class="post-title">
+      <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+    </h1>
+
+    <div class="post-content">
+      <div>
         {{ .Content }}
         <table>
           <thead>
@@ -30,5 +33,5 @@
         </table>
       </div>
     </div>
-  </section>
+  </article>
 {{ end }}

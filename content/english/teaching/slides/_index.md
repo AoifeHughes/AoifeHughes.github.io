@@ -2,7 +2,7 @@
 title: "Slides"
 meta_title: "Teaching Slides"
 description: "Slide decks from Aoife Hughes' workshops and classroom sessions"
-image: "/images/me.png"
+cover: "/images/me.png"
 type: "teaching-slides"
 draft: false
 ---

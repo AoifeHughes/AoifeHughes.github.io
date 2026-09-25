@@ -1,0 +1,10 @@
+/* Terminal.css colour scheme: "Studio"
+   https://panr.github.io/terminal-css/ — background #F7F4FF,
+   foreground #403352, accent #6F49AB. Loaded after the theme's own
+   stylesheet (see themes/terminal/layouts/partials/head.html), so these
+   :root variables win over the theme defaults. */
+:root {
+  --background: #F7F4FF;
+  --foreground: #403352;
+  --accent: #6F49AB;
+}

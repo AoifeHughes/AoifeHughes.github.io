@@ -2,7 +2,7 @@
 title: "About Aoife"
 meta_title: "About"
 description: "Learn more about Aoife Hughes, researcher, programmer, and gaming enthusiast"
-image: "/images/me.png"
+cover: "/images/me.png"
 draft: false
 ---
 
