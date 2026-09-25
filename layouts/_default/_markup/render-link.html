@@ -1,0 +1,11 @@
+{{- /* Markdown links bypass the templates, so a root-relative destination
+       ("/teaching/slides/") would ignore a path-prefixed baseURL (html-host
+       serves the site under /AoifeHughes.github.io/public/). Route those
+       through siteurl.html; external, protocol-relative, relative and
+       fragment links pass through untouched. */ -}}
+{{- $dest := .Destination -}}
+{{- if and (hasPrefix $dest "/") (not (hasPrefix $dest "//")) -}}
+  {{- $dest = partial "siteurl.html" (dict "u" $dest "p" .Page) -}}
+{{- end -}}
+<a href="{{ $dest | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- /* chomp trailing newline */ -}}
