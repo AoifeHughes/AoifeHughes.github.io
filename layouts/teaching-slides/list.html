@@ -24,9 +24,9 @@
                 <br />
                 {{ .description }}
               </td>
-              <td>{{ with .html }}<a href="{{ . }}">View (recommended)</a>{{ else }}&mdash;{{ end }}</td>
-              <td>{{ with .pdf }}<a href="{{ . }}">Download PDF</a>{{ else }}&mdash;{{ end }}</td>
-              <td>{{ with .pptx }}<a href="{{ . }}">Download PPTX</a>{{ else }}&mdash;{{ end }}</td>
+              <td>{{ with .html }}<a href="{{ partial "siteurl.html" (dict "u" . "p" $) }}">View (recommended)</a>{{ else }}&mdash;{{ end }}</td>
+              <td>{{ with .pdf }}<a href="{{ partial "siteurl.html" (dict "u" . "p" $) }}">Download PDF</a>{{ else }}&mdash;{{ end }}</td>
+              <td>{{ with .pptx }}<a href="{{ partial "siteurl.html" (dict "u" . "p" $) }}">Download PPTX</a>{{ else }}&mdash;{{ end }}</td>
             </tr>
             {{ end }}
           </tbody>

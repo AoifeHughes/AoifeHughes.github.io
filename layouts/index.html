@@ -5,7 +5,7 @@
     <p>{{ .Params.banner.content }}</p>
     {{ with .Params.banner.button }}
       {{ if .enable }}
-        <p><a class="read-more button inline" href="{{ .link | absURL }}">[{{ .label }}]</a></p>
+        <p><a class="read-more button inline" href="{{ partial "siteurl.html" (dict "u" .link "p" $) }}">[{{ .label }}]</a></p>
       {{ end }}
     {{ end }}
   </div>
@@ -17,7 +17,7 @@
            the two former /images/image-placeholder.png references were
            dropped because the file does not exist. */}}
       {{ with .image }}
-        <img src="{{ . | absURL }}" class="post-cover" alt="{{ $.Title | plainify }}">
+        <img src="{{ partial "siteurl.html" (dict "u" . "p" $) }}" class="post-cover" alt="{{ $.Title | plainify }}">
       {{ end }}
       <div class="post-content">
         <p>{{ .content }}</p>
@@ -32,7 +32,7 @@
       {{ with .button }}
         {{ if .enable }}
           <div>
-            <a class="read-more button inline" href="{{ .link | absURL }}">[{{ .label }}]</a>
+            <a class="read-more button inline" href="{{ partial "siteurl.html" (dict "u" .link "p" $) }}">[{{ .label }}]</a>
           </div>
         {{ end }}
       {{ end }}

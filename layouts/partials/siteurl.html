@@ -1,0 +1,19 @@
+{{- /* Resolve a site-root path ("/slides/x") against the current baseURL.
+       Takes a dict: (dict "u" "/path" "p" $). Works for local html-host
+       builds (baseURL "/AoifeHughes.github.io/public/") and Pages builds
+       (baseURL "https://AoifeHughes.github.io/"). Hugo's absURL() is a
+       no-op on leading-slash inputs (verified, Hugo 0.144.0), so the join
+       is done explicitly. */ -}}
+{{- $u := .u -}}
+{{- $b := urls.Parse .p.Site.BaseURL -}}
+{{- if or (hasPrefix $u "http://") (hasPrefix $u "https://") -}}
+  {{- $u -}}
+{{- else -}}
+  {{- $u = strings.TrimPrefix "/" $u -}}
+  {{- $path := trim $b.Path "/" -}}
+  {{- if $b.Host -}}
+    {{- if $path -}}{{- printf "%s://%s/%s/%s" $b.Scheme $b.Host $path $u | safeHTML -}}{{- else -}}{{- printf "%s://%s/%s" $b.Scheme $b.Host $u | safeHTML -}}{{- end -}}
+  {{- else -}}
+    {{- if $path -}}{{- printf "/%s/%s" $path $u | safeHTML -}}{{- else -}}{{- printf "/%s" $u | safeHTML -}}{{- end -}}
+  {{- end -}}
+{{- end -}}

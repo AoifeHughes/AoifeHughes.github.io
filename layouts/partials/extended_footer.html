@@ -1,7 +1,7 @@
 {{/* Replaces the hugoplate footer menu (About / Privacy Policy). */}}
 <div class="pagination">
   <div class="pagination__items">
-    <a href="{{ "/about" | absURL }}">About</a>
-    <a href="{{ "/privacy-policy" | absURL }}">Privacy Policy</a>
+    <a href="{{ partial "siteurl.html" (dict "u" "/about" "p" $) }}">About</a>
+    <a href="{{ partial "siteurl.html" (dict "u" "/privacy-policy" "p" $) }}">Privacy Policy</a>
   </div>
 </div>
