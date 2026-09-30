@@ -8,3 +8,11 @@
   --foreground: #403352;
   --accent: #6F49AB;
 }
+
+/* Slides hub table: link cells wrap at spaces only, never mid-word
+   (the theme sets word-break: break-word on every element). */
+.slides-table td:not(:first-child),
+.slides-table td:not(:first-child) * {
+  word-break: normal;
+  overflow-wrap: normal;
+}

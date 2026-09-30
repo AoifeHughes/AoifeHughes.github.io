@@ -7,13 +7,14 @@
     <div class="post-content">
       <div>
         {{ .Content }}
-        <table>
+        <table class="slides-table">
           <thead>
             <tr>
               <th>Preview</th>
               <th>HTML</th>
               <th>PDF</th>
               <th>PPTX</th>
+              <th>Materials</th>
             </tr>
           </thead>
           <tbody>
@@ -27,6 +28,7 @@
               <td>{{ with .html }}<a href="{{ partial "siteurl.html" (dict "u" . "p" $) }}">View (recommended)</a>{{ else }}&mdash;{{ end }}</td>
               <td>{{ with .pdf }}<a href="{{ partial "siteurl.html" (dict "u" . "p" $) }}">Download PDF</a>{{ else }}&mdash;{{ end }}</td>
               <td>{{ with .pptx }}<a href="{{ partial "siteurl.html" (dict "u" . "p" $) }}">Download PPTX</a>{{ else }}&mdash;{{ end }}</td>
+              <td>{{ with .materials }}<a href="{{ partial "siteurl.html" (dict "u" . "p" $) }}">materials.zip</a>{{ else }}&mdash;{{ end }}</td>
             </tr>
             {{ end }}
           </tbody>
